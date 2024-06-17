@@ -1,7 +1,4 @@
 <script setup lang="ts">
-const nuxtApp = useNuxtApp()
-const { activeHeadings, updateHeadings } = useScrollspy()
-
 const links = computed(() => [{
   label: 'Features',
   to: '/',
@@ -11,15 +8,6 @@ const links = computed(() => [{
   to: '/ecosystem',
   icon: 'i-heroicons-rectangle-group'
 }])
-
-nuxtApp.hooks.hookOnce('page:finish', () => {
-  updateHeadings([
-    document.querySelector('#features'),
-    document.querySelector('#pricing'),
-    document.querySelector('#testimonials'),
-    document.querySelector('#faq')
-  ])
-})
 </script>
 
 <template>

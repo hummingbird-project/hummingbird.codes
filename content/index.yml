@@ -24,29 +24,28 @@ features:
   description: Hummingbird takes advantage of Swift to make it easy and enjoyable to create robust backends.
   items:
     - title: Ergonomic Syntax
-      description: Hummingbird apps are easy to develop and maintain thanks to Swift's ergonmic syntax.
-      icon: i-simple-icons-swift
+      description: Hummingbird apps are easy to develop thanks to Swift's ergonmic syntax.
+      icon: i-heroicons-light-bulb
     - title: Structured Concurrency
       description: |
-        Hummingbird 2 is designed to take advantage of structured concurrency.
-        This makes apps easy to understand and maintain.
-      icon: i-simple-icons-swift
+        Embracing Structured Concurrency makes Hummingbird apps easy to maintain.
+      icon: i-heroicons-shield-check
     - title: Lightweight
       description: |
         With a tiny memory footprint, Hummingbird is perfect for deploying on cloud services.
-      icon: i-simple-icons-swift
+      icon: i-heroicons-server-stack
     - title: Thread and Memory Safe
       description: The Swift compiler checks your apps for race conditions, making your code reliable before you run it.
-      icon: i-simple-icons-swift
+      icon: i-heroicons-magnifying-glass
     - title: Predictably Performant
       description: Hummingbird makes your backends blazing fast, while ARC makes this performance predictable. No worries about garbage collection.
-      icon: i-simple-icons-swift
+      icon: i-heroicons-rocket-launch
     - title: Cross-Platform
       description: Swift runs on your platform. Linux, macOS, and iOS and Windows.
-      icon: i-simple-icons-swift
+      icon: i-simple-icons-linux
 packages:
   title: Ecosystem
-  description: Hummingbird has a wide ecosystem of high quality packages.
+  description: Server-Side Swift has a wide ecosystem of high quality packages.
   links:
     - label: Overview
       icon: i-heroicons-arrow-right-20-solid

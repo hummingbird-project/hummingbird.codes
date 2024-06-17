@@ -56,7 +56,7 @@ databases:
       to: https://github.com/swift-server/swift-kafka-client
       class: col-start-3 col-span-4 row-span-2
     - title: MQTTNIO
-      description: A Swift NIO based MQTT v3.1.1 and v5.0 client.
+      description: A SwiftNIO based MQTT v3.1.1 and v5.0 client.
       icon: i-simple-icons-mqtt
       to: https://github.com/swift-server-community/mqtt-nio
       class: col-span-4 row-span-2
