@@ -1,0 +1,70 @@
+title: Hummingbird 2 - Web Framework for Swift
+description: Hummingbird 2 is a cross-platform web server framework for Swift.
+hero:
+  title: Hummingbird 2
+  description: The Web Framework for Swift
+  headline:
+    label: What's new in Hummingbird 2?
+    to: https://swiftonserver.com/whats-new-in-hummingbird-2/
+    icon: i-heroicons-arrow-top-right-on-square-20-solid
+  links:
+    - label: Get started
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true
+      to: '#get-started'
+      size: xl
+    - label: Example Projects
+      icon: i-simple-icons-github
+      size: xl
+      color: gray
+      to: https://github.com/hummingbird-project/hummingbird-examples
+      target: _blank
+features:
+  title: Create Better Backends with Swift
+  description: Hummingbird takes advantage of Swift to make it easy and enjoyable to create robust backends.
+  items:
+    - title: Ergonomic Syntax
+      description: Hummingbird apps are easy to develop and maintain thanks to Swift's ergonmic syntax.
+      icon: i-simple-icons-swift
+    - title: Structured Concurrency
+      description: |
+        Hummingbird 2 is designed to take advantage of structured concurrency.
+        This makes apps easy to understand and maintain.
+      icon: i-simple-icons-swift
+    - title: Lightweight
+      description: |
+        With a tiny memory footprint, Hummingbird is perfect for deploying on cloud services.
+      icon: i-simple-icons-swift
+    - title: Thread and Memory Safe
+      description: The Swift compiler checks your apps for race conditions, making your code reliable before you run it.
+      icon: i-simple-icons-swift
+    - title: Predictably Performant
+      description: Hummingbird makes your backends blazing fast, while ARC makes this performance predictable. No worries about garbage collection.
+      icon: i-simple-icons-swift
+    - title: Cross-Platform
+      description: Swift runs on your platform. Linux, macOS, and iOS and Windows.
+      icon: i-simple-icons-swift
+packages:
+  title: Ecosystem
+  description: Hummingbird has a wide ecosystem of high quality packages.
+  links:
+    - label: Overview
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true
+      to: '/ecosystem'
+      size: xl
+    - label: Browse All
+      icon: i-heroicons-magnifying-glass
+      size: xl
+      color: gray
+      to: https://swiftpackageindex.com/search?query=platform%3Alinux
+      target: _blank
+cta:
+  title: Join the Hummingbird Community
+  description: |
+    Join the Hummingbird community on Discord to get help, share your projects, and chat with other developers.
+  links:
+    - label: Join the Community
+      to: https://discord.gg/7ME3nZ7mP2
+      leadingIcon: i-simple-icons-discord
+      size: xl

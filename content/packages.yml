@@ -1,0 +1,139 @@
+title: Hummingbird 2 - Ecosystem of Packages
+description: Hummingbird 2 has a rich ecosystem of packages to help you build your backend.
+hero:
+  title: Ecosystem Highlights
+  description: Some highlights packages that are commonly used with Hummingbird.
+  links:
+    - label: Get started
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true
+      to: '#get-started'
+      size: xl
+    - label: Browse All
+      icon: i-heroicons-magnifying-glass
+      size: xl
+      color: gray
+      to: https://swiftpackageindex.com/search?query=platform%3Alinux
+      target: _blank
+databases:
+  title: Database Support
+  description: Hummingbird supports a wide range of databases, tightly integrated through SwiftNIO.
+  items:
+    - title: PostgresNIO
+      description: Non-blocking, event-driven Swift client for PostgreSQL built on SwiftNIO.
+      icon: i-simple-icons-postgresql
+      to: https://github.com/vapor/postgres-nio
+    - title: MySQLNIO
+      description: Non-blocking, event-driven Swift client for MySQL built on SwiftNIO.
+      icon: i-simple-icons-mysql
+      to: https://github.com/vapor/mysql-nio
+    - title: SQLiteNIO
+      description: Non-blocking, event-driven Swift client for SQLite built on SwiftNIO.
+      icon: i-simple-icons-sqlite
+      to: https://github.com/vapor/sqlite-nio
+    - title: OracleNIO
+      description: Non-blocking, event-driven Swift client for Oracle Databases built on SwiftNIO.
+      icon: i-simple-icons-oracle
+      to: https://github.com/lovetodream/oracle-nio
+    - title: RediStack
+      description: A non-blocking Swift client for Redis built on top of SwiftNIO.
+      icon: i-simple-icons-redis
+      to: https://github.com/swift-server/redistack
+      class: col-span-4 row-span-2
+    - title: MongoKitten
+      description: A fast, pure swift MongoDB driver based on SwiftNIO and built for Server Side Swift.
+      icon: i-simple-icons-mongodb
+      to: https://github.com/orlandos-nl/MongoKitten
+      class: col-span-4 row-span-2
+    - title: Cassandra
+      description: A Swift client for Apache Cassandra.
+      icon: i-simple-icons-apachecassandra
+      to: https://github.com/apple/swift-cassandra-client
+      class: col-span-4 row-span-2
+    - title: Kafka
+      description: A Swift client for Apache Kafka.
+      icon: i-simple-icons-apachekafka
+      to: https://github.com/swift-server/swift-kafka-client
+      class: col-start-3 col-span-4 row-span-2
+    - title: MQTTNIO
+      description: A Swift NIO based MQTT v3.1.1 and v5.0 client.
+      icon: i-simple-icons-mqtt
+      to: https://github.com/swift-server-community/mqtt-nio
+      class: col-span-4 row-span-2
+extensions:
+  title: Official Extensions
+  description: There are official extensions to cover your use cases.
+  items:
+    - title: HummingbirdWebSocket
+      description: WebSocket upgrade support for the Hummingbird server framework.
+      icon: i-heroicons-globe-alt
+      to: https://github.com/hummingbird-project/hummingbird-websocket
+    - title: HummingbirdLambda
+      description: Run Hummingbird inside an AWS Lambda.
+      icon: i-simple-icons-awslambda
+      to: https://github.com/hummingbird-project/hummingbird-lambda
+    - title: HummingbirdAuth
+      description: Authentication framework and extensions for Hummingbird server framework.
+      icon: i-heroicons-lock-closed
+      to: https://github.com/hummingbird-project/hummingbird-auth
+    - title: OpenAPIHummingbird
+      description: Generate Swift client and server code from an OpenAPI document.
+      icon: i-simple-icons-swagger
+      to: https://github.com/swift-server/swift-openapi-hummingbird
+    - title: HummingbirdFluent
+      description: Hummingbird interface to the Fluent database ORM.
+      icon: i-heroicons-circle-stack
+      to: https://github.com/hummingbird-project/hummingbird-fluent
+    - title: HummingbirdCompression
+      description: Request decompression and response compression for Hummingbird
+      icon: i-simple-icons-swagger
+      to: https://github.com/hummingbird-project/hummingbird-compression
+    - title: HummingbirdRedis
+      description: Hummingbird interface to RediStack Swift library.
+      icon: i-simple-icons-redis
+      to: https://github.com/hummingbird-project/hummingbird-redis
+observability:
+  title: Observability
+  description: Observability is integrated throughout the stack.
+  items:
+    - title: Logging
+      description: A Logging API package for Swift.
+      icon: i-heroicons-book-open
+      to: https://github.com/apple/swift-log
+      class: col-start-5 col-span-4
+    - title: Metrics
+      description: A Metrics API package for Swift.
+      icon: i-heroicons-chart-bar
+      to: https://github.com/apple/swift-metrics
+      class: col-start-3 col-span-4
+    - title: Tracing
+      description: A Distributed Tracing API for Swift.
+      icon: i-heroicons-magnifying-glass
+      to: https://github.com/apple/swift-distributed-tracing
+      class: col-span-4
+misc:
+  title: Other Packages
+  description: Other packages that are commonly used with Hummingbird.
+  items:
+    - title: JWTKit
+      description: JSON Web Token signing and verification using Swift-Crypto.
+      icon: i-simple-icons-jsonwebtokens
+      to: https://github.com/vapor/jwt-kit
+      class: col-start-3 col-span-4 row-span-2
+    - title: WebAuthn
+      description: WebAuthn (Passkey) support.
+      icon: i-simple-icons-webauthn
+      to: https://github.com/swift-server/webauthn-swift
+      class: col-span-4 row-span-2
+    - title: Mustache
+      description: Package for rendering Mustache templates.
+      icon: i-heroicons-todo
+      to: https://github.com/hummingbird-project/swift-mustache
+    - title: APNSwift
+      description: A non-blocking Swift module for sending remote Apple Push Notification requests to APNS built on AsyncHttpClient.
+      icon: i-simple-icons-todo
+      to: https://github.com/swift-server-community/APNSwift
+    - title: Soto
+      description: Swift language SDK for Amazon Web Services (AWS)
+      icon: i-simple-icons-aws
+      to: https://github.com/soto-project/soto
