@@ -1,0 +1,93 @@
+title: Hummingbird 2 - Getting Started
+description: Get started with Hummingbird 2, a cross-platform web server framework for Swift.
+hero:
+  title: Setup Guide
+  description: Swift runs on your platform. We'll set you up in no time!
+  links:
+    - label: Need Help?
+      to: https://discord.gg/7ME3nZ7mP2
+      color: gray
+      leadingIcon: i-simple-icons-discord
+      size: xl
+swift:
+  title: Install Swift
+  description: |
+    The Swift programming language is the foundation of Hummingbird.
+  links:
+    - label: Xcode (macOS)
+      to: https://developer.apple.com/xcode/
+      color: gray
+      leadingIcon: i-simple-icons-xcode
+      size: xl
+    - label: Swiftly (Linux)
+      to: https://github.com/swiftlang/swiftly
+      leadingIcon: i-simple-icons-linux
+      color: gray
+      size: xl
+    - label: Install Manually
+      to: https://www.swift.org/install/
+      leadingIcon: i-simple-icons-swift
+      color: gray
+      size: xl
+editor:
+  title: Editor Support
+  description: |
+    Hummingbird works great with your favorite editors.
+  links:
+    - label: Xcode (macOS only)
+      to: https://developer.apple.com/xcode/
+      color: gray
+      leadingIcon: i-simple-icons-xcode
+      size: xl
+    - label: VSCode
+      to: https://code.visualstudio.com/
+      leadingIcon: i-simple-icons-visualstudiocode
+      color: gray
+      size: xl
+    - label: VSCode Extension
+      to: https://github.com/swiftlang/vscode-swift
+      color: gray
+      leadingIcon: i-simple-icons-visualstudiocode
+      size: xl
+template:
+  title: Create a Project
+  description: Start a new project from a template or example project.
+  links:
+    - label: Quick Start
+      to: https://github.com/hummingbird-project/template
+      leadingIcon: i-simple-icons-github
+      size: xl
+    - label: Examples
+      to: https://github.com/hummingbird-project/hummingbird-examples
+      leadingIcon: i-simple-icons-git
+      color: gray
+      size: xl
+    - label: SwiftPM (manual)
+      to: https://github.com/hummingbird-project/hummingbird
+      leadingIcon: i-simple-icons-swift
+      color: gray
+      size: xl
+run:
+  title: Run Your Project
+  description: |
+    Run your project and start building your backend.
+  links:
+    - label: Learn Swift
+      to: https://docs.swift.org/swift-book/documentation/the-swift-programming-language/guidedtour/
+      leadingIcon: i-heroicons-light-bulb
+      size: xl
+      color: gray
+    - label: Hummingbird Docs
+      to: https://docs.hummingbird.codes/
+      leadingIcon: i-heroicons-book-open
+      size: xl
+      color: gray
+cta:
+  title: Join the Hummingbird Community
+  description: |
+    Join the Hummingbird community on Discord to get help, share your projects, and chat with other developers.
+  links:
+    - label: Join the Community
+      to: https://discord.gg/7ME3nZ7mP2
+      leadingIcon: i-simple-icons-discord
+      size: xl
