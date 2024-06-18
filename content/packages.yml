@@ -39,27 +39,18 @@ databases:
       description: A non-blocking Swift client for Redis built on top of SwiftNIO.
       icon: i-simple-icons-redis
       to: https://github.com/swift-server/redistack
-      class: col-span-4 row-span-2
     - title: MongoKitten
       description: A fast, pure swift MongoDB driver based on SwiftNIO and built for Server Side Swift.
       icon: i-simple-icons-mongodb
       to: https://github.com/orlandos-nl/MongoKitten
-      class: col-span-4 row-span-2
     - title: Cassandra
       description: A Swift client for Apache Cassandra.
       icon: i-simple-icons-apachecassandra
       to: https://github.com/apple/swift-cassandra-client
-      class: col-span-4 row-span-2
     - title: Kafka
       description: A Swift client for Apache Kafka.
       icon: i-simple-icons-apachekafka
-      to: https://github.com/swift-server/swift-kafka-client
-      class: col-start-3 col-span-4 row-span-2
-    - title: MQTTNIO
-      description: A SwiftNIO based MQTT v3.1.1 and v5.0 client.
-      icon: i-simple-icons-mqtt
-      to: https://github.com/swift-server-community/mqtt-nio
-      class: col-span-4 row-span-2
+      to: https://github.com/swift-server/swift-kafka-clien
 extensions:
   title: Official Extensions
   description: There are official extensions to cover your use cases.
@@ -137,3 +128,7 @@ misc:
       description: Swift language SDK for Amazon Web Services (AWS)
       icon: i-simple-icons-aws
       to: https://github.com/soto-project/soto
+    - title: MQTTNIO
+      description: A SwiftNIO based MQTT v3.1.1 and v5.0 client.
+      icon: i-simple-icons-mqtt
+      to: https://github.com/swift-server-community/mqtt-nio
