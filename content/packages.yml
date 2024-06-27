@@ -7,8 +7,9 @@ hero:
     - label: Get started
       icon: i-heroicons-arrow-right-20-solid
       trailing: true
-      to: '#get-started'
       size: xl
+      to: https://github.com/hummingbird-project/hummingbird
+      target: _blank
     - label: Browse All
       icon: i-heroicons-magnifying-glass
       size: xl

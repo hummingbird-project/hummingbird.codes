@@ -12,10 +12,12 @@ useSeoMeta({
 <template>
   <div>
     <ULandingHero
-      :title="page.hero.title"
       :description="page.hero.description"
       :links="page.hero.links"
     >
+      <template #title>
+        <span class="logo-overlay">Hummingbird 2</span>
+      </template>
       <template #headline>
         <UBadge
           v-if="page.hero.headline"
@@ -62,13 +64,7 @@ useSeoMeta({
       </UPageGrid>
     </ULandingSection>
 
-    <ULandingHero
-      :title="page.packages.title"
-      :description="page.packages.description"
-      :links="page.packages.links"
-    />
-
-    <ULandingSection class="bg-primary-50 dark:bg-primary-400 dark:bg-opacity-10">
+    <ULandingSection>
       <ULandingCTA
         v-bind="page.cta"
         :card="false"
@@ -76,3 +72,18 @@ useSeoMeta({
     </ULandingSection>
   </div>
 </template>
+
+<style scoped>
+.logo-overlay::before {
+  width: 2em;
+  height: 2em;
+  margin-left: -1.5em;
+  margin-top: -0.5em;
+  content: '';
+  overlay: auto;
+  background-image: url("/logo.png");
+  background-size: 2em;
+  background-origin: content-box;
+  background-repeat: no-repeat;
+}
+</style>

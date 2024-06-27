@@ -18,7 +18,7 @@ const links = computed(() => [{
   <UHeader :links="links">
     <template #logo>
       <img
-        src="/assets/logo.png"
+        src="/logo.png"
         class="w-8 h-8 mx-auto"
       >
       Hummingbird 2
