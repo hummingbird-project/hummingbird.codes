@@ -4,9 +4,9 @@ const links = computed(() => [{
   to: '/',
   icon: 'i-heroicons-cube-transparent'
 }, {
-  label: 'Get Started',
-  to: '/get-started',
-  icon: 'i-heroicons-play'
+  label: 'News',
+  to: '/news',
+  icon: 'i-heroicons-light-bulb'
 }, {
   label: 'Ecosystem',
   to: '/ecosystem',
