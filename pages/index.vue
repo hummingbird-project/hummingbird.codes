@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { Bar } from 'vue-chartjs'
+import BackgroundIcons from '~/components/BackgroundIcons.vue';
 
 const { data: page } = await useAsyncData('index', () => queryContent('/').findOne());
 
@@ -60,7 +61,8 @@ const chartOptions = ref({
 </script>
 
 <template>
-  <div>
+  <div class="display-flex">
+    <BackgroundIcons id="icons" />
     <ULandingSection
       class="md:py-0 sm:py-0"
     >
@@ -169,6 +171,13 @@ const chartOptions = ref({
 </template>
 
 <style scoped>
+#icons {
+  position: static;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
 .logo-overlay::before {
   width: 2em;
   height: 2em;
