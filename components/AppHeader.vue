@@ -21,7 +21,7 @@ const links = computed(() => [{
         src="/logo.png"
         class="w-8 h-8 mx-auto"
       >
-      Hummingbird 2
+      Hummingbird
     </template>
 
     <template #right>

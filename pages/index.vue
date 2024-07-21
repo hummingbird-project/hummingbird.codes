@@ -71,7 +71,7 @@ const chartOptions = ref({
         :links="page.hero.links"
       >
         <template #title>
-          <span class="logo-overlay">Hummingbird 2</span>
+          <span class="logo-overlay">Hummingbird</span>
         </template>
         <template #bottom>
           <div class="mt-16">
