@@ -11,7 +11,7 @@ hero:
     - label: Get started
       icon: i-heroicons-arrow-right-20-solid
       trailing: true
-      size: xl  
+      size: xl
       to: https://github.com/hummingbird-project/hummingbird
       target: _blank
     - label: Example Projects
@@ -29,21 +29,37 @@ features:
       icon: i-heroicons-light-bulb
     - title: Structured Concurrency
       description: |
-        Embracing Structured Concurrency makes Hummingbird apps easy to maintain.
+        Embracing Structured Concurrency makes Hummingbird apps easy to build.
       icon: i-heroicons-shield-check
     - title: Lightweight
       description: |
         With a tiny memory footprint, Hummingbird is perfect for deploying on cloud services.
       icon: i-heroicons-server-stack
     - title: Thread and Memory Safe
-      description: The Swift compiler checks your apps for race conditions, making your code reliable before you run it.
+      description: Swift checks your apps for errors, making your code reliable even before you run it.
       icon: i-heroicons-magnifying-glass
     - title: Predictably Performant
-      description: Hummingbird makes your backends blazing fast, while ARC makes this performance predictable. No worries about garbage collection.
+      description: Hummingbird makes your backends blazing fast, while ARC replaces garbage collection.
       icon: i-heroicons-rocket-launch
     - title: Cross-Platform
       description: Swift runs on your platform. Linux, macOS, and iOS and Windows.
       icon: i-simple-icons-linux
+ecosystem:
+  title: Every Package you need
+  description: |
+    Hummingbird comes with mature solutions for the common needs of all web applications.
+  links:
+    - label: Discover Packages
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true
+      size: xl
+      to: /ecosystem
+      target: _blank
+performance:
+  title: Excellent Performance
+  description: |
+    Hummingbird uses a modern, high-performance web server that can handle tens of thousands of requests per second.
+    All of this while keeping your memory footprint extremely low.
 cta:
   title: Join the Hummingbird Community
   description: |

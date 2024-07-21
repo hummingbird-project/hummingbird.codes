@@ -1,12 +1,60 @@
 <script setup lang="ts">
+import { Bar } from 'vue-chartjs'
+
 const { data: page } = await useAsyncData('index', () => queryContent('/').findOne());
-const { data: helloHumingbird } = await useAsyncData('hello-hummingbird', () => queryContent('/hello-hummingbird').findOne());
 
 useSeoMeta({
   title: page.value.title,
   ogTitle: page.value.title,
   description: page.value.description,
   ogDescription: page.value.description
+})
+
+const performanceChartData = ref({
+  labels: ['Laravel', 'Rails', 'Vapor', 'Hummingbird', 'Go', 'HB Core'],
+  datasets: [
+    {
+      label: 'Request per second',
+      data: [12990, 93140, 115300, 643202, 681653, 708562],
+      backgroundColor: [
+        'rgba(249, 50, 44, 0.4)',
+        'rgba(249, 50, 44, 0.4)',
+        'rgba(223, 62, 251, 0.4)',
+        'rgba(255, 165, 0, 0.8)',
+        'rgba(0, 128, 128, 0.4)',
+        'rgba(255, 165, 0, 0.8)'
+      ],
+      borderRadius: 4
+    }
+  ]
+})
+const chartOptions = ref({
+  responsive: true,
+  plugins: {
+    tooltip: {
+      enabled: false
+    },
+    legend: {
+      display: false
+    }
+  },
+  scales: {
+    y: {
+      display: false
+    },
+    x: {
+      grid: {
+        display: false
+      },
+      // Don't show the x-axis labels
+      ticks: {
+        font: {
+          size: 9,
+          weight: 'bold'
+        }
+      }
+    }
+  }
 })
 </script>
 
@@ -57,6 +105,7 @@ useSeoMeta({
       :title="page.features.title"
       :description="page.features.description"
       :headline="page.features.headline"
+      class="md:py-0"
     >
       <UPageGrid
         id="features"
@@ -70,9 +119,33 @@ useSeoMeta({
       </UPageGrid>
     </ULandingSection>
 
-    <ULandingCard class="line-numbered-code">
-      <ContentDoc path="/basic-route" />
-    </ULandingCard>
+    <ULandingSection>
+      <UPageHero
+        :title="page.ecosystem.title"
+        :description="page.ecosystem.description"
+        :links="page.ecosystem.links"
+        align="left"
+      >
+        <ULandingCard class="line-numbered-code">
+          <ContentDoc path="/basic-route" />
+        </ULandingCard>
+      </UPageHero>
+    </ULandingSection>
+
+    <UPageHero
+      :title="page.performance.title"
+      :description="page.performance.description"
+      :links="page.performance.links"
+      align="right"
+      class="mx-32"
+    >
+      <div class="relative sm-mx-auto">
+        <Bar
+          :data="performanceChartData"
+          :options="chartOptions"
+        />
+      </div>
+    </UPageHero>
 
     <ULandingSection>
       <ULandingCTA
@@ -98,7 +171,7 @@ useSeoMeta({
 }
 
 .line-numbered-code {
-  max-width: calc(min(40em, 90%));
+  max-width: calc(min(80vw, 40em, 100%));
   margin: 32pt auto;
 }
 
