@@ -72,9 +72,11 @@ const chartOptions = ref({
           <span class="logo-overlay">Hummingbird 2</span>
         </template>
         <template #bottom>
-          <ULandingCard class="line-numbered-code">
-            <ContentDoc path="/hello-hummingbird" />
-          </ULandingCard>
+          <div class="mt-16">
+            <ULandingCard class="line-numbered-code">
+              <ContentDoc path="/hello-hummingbird" />
+            </ULandingCard>
+          </div>
         </template>
         <template #headline>
           <UBadge
@@ -181,23 +183,22 @@ const chartOptions = ref({
 }
 
 .line-numbered-code {
-  max-width: calc(min(80vw, 40em, 100%));
-  margin: 32pt auto;
+  max-width: calc(min(90vw, 40em, 100%));
+  overflow: hidden;
+  margin: 0 auto;
 }
 
 .line-numbered-code >>> pre {
-  display: flex;
-  flex: 1 1 0%;
   line-height: 1.625;
   counter-reset: lines;
 }
 
 .hero-chart {
   max-width: calc(min(100%, 80vw));
+  margin: inherit auto;
 }
 
 .line-numbered-code >>> pre code {
-  width: 100%;
   display: flex;
   flex-direction: column;
 }
