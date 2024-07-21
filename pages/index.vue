@@ -11,14 +11,14 @@ useSeoMeta({
 })
 
 const performanceChartData = ref({
-  labels: ['Laravel', 'Rails', 'Vapor', 'Hummingbird', 'Go', 'HB Core'],
+  labels: ['Laravel', 'Expess', 'Vapor', 'Hummingbird', 'Go', 'HB Core'],
   datasets: [
     {
       label: 'Request per second',
-      data: [12990, 93140, 115300, 643202, 681653, 708562],
+      data: [12990, 113117, 115300, 643202, 681653, 708562],
       backgroundColor: [
         'rgba(249, 50, 44, 0.4)',
-        'rgba(249, 50, 44, 0.4)',
+        'rgba(51, 153, 51, 0.4)',
         'rgba(223, 62, 251, 0.4)',
         'rgba(255, 165, 0, 0.8)',
         'rgba(0, 128, 128, 0.4)',
@@ -184,7 +184,8 @@ const chartOptions = ref({
 
 .line-numbered-code {
   max-width: calc(min(90vw, 40em, 100%));
-  overflow: hidden;
+  overflow: none;
+  white-space: pre-wrap;
   margin: 0 auto;
 }
 
