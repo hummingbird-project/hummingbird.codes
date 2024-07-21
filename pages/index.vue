@@ -30,6 +30,7 @@ const performanceChartData = ref({
 })
 const chartOptions = ref({
   responsive: true,
+  maintainAspectRatio: false,
   plugins: {
     tooltip: {
       enabled: false
@@ -60,52 +61,56 @@ const chartOptions = ref({
 
 <template>
   <div>
-    <ULandingHero
-      :description="page.hero.description"
-      :links="page.hero.links"
+    <ULandingSection
+      class="md:py-0 sm:py-0"
     >
-      <template #title>
-        <span class="logo-overlay">Hummingbird 2</span>
-      </template>
-      <template #bottom>
-        <ULandingCard class="line-numbered-code">
-          <ContentDoc path="/hello-hummingbird" />
-        </ULandingCard>
-      </template>
-      <template #headline>
-        <UBadge
-          v-if="page.hero.headline"
-          variant="subtle"
-          size="lg"
-          class="relative rounded-full font-semibold"
-        >
-          <NuxtLink
-            :to="page.hero.headline.to"
-            target="_blanak"
-            class="focus:outline-none"
-            tabindex="-1"
+      <ULandingHero
+        :description="page.hero.description"
+        :links="page.hero.links"
+      >
+        <template #title>
+          <span class="logo-overlay">Hummingbird 2</span>
+        </template>
+        <template #bottom>
+          <ULandingCard class="line-numbered-code">
+            <ContentDoc path="/hello-hummingbird" />
+          </ULandingCard>
+        </template>
+        <template #headline>
+          <UBadge
+            v-if="page.hero.headline"
+            variant="subtle"
+            size="lg"
+            class="relative rounded-full font-semibold"
           >
-            <span
-              class="absolute inset-0"
-              aria-hidden="true"
-            />
-          </NuxtLink>
-          {{ page.hero.headline.label }}
+            <NuxtLink
+              :to="page.hero.headline.to"
+              target="_blanak"
+              class="focus:outline-none"
+              tabindex="-1"
+            >
+              <span
+                class="absolute inset-0"
+                aria-hidden="true"
+              />
+            </NuxtLink>
+            {{ page.hero.headline.label }}
 
-          <UIcon
-            v-if="page.hero.headline.icon"
-            :name="page.hero.headline.icon"
-            class="ml-1 w-4 h-4 pointer-events-none"
-          />
-        </UBadge>
-      </template>
-    </ULandingHero>
+            <UIcon
+              v-if="page.hero.headline.icon"
+              :name="page.hero.headline.icon"
+              class="ml-1 w-4 h-4 pointer-events-none"
+            />
+          </UBadge>
+        </template>
+      </ULandingHero>
+    </ULandingSection>
 
     <ULandingSection
+      class="md:py-0 sm:py-0"
       :title="page.features.title"
       :description="page.features.description"
       :headline="page.features.headline"
-      class="md:py-0"
     >
       <UPageGrid
         id="features"
@@ -119,7 +124,9 @@ const chartOptions = ref({
       </UPageGrid>
     </ULandingSection>
 
-    <ULandingSection>
+    <ULandingSection
+      class="md:py-0 sm:py-0"
+    >
       <UPageHero
         :title="page.ecosystem.title"
         :description="page.ecosystem.description"
@@ -132,20 +139,23 @@ const chartOptions = ref({
       </UPageHero>
     </ULandingSection>
 
-    <UPageHero
-      :title="page.performance.title"
-      :description="page.performance.description"
-      :links="page.performance.links"
-      align="right"
-      class="mx-32"
+    <ULandingSection
+      class="md:py-0 sm:py-0"
     >
-      <div class="relative sm-mx-auto">
-        <Bar
-          :data="performanceChartData"
-          :options="chartOptions"
-        />
-      </div>
-    </UPageHero>
+      <UPageHero
+        :title="page.performance.title"
+        :description="page.performance.description"
+        :links="page.performance.links"
+        align="right"
+      >
+        <div class="relative sm-mx-auto hero-chart">
+          <Bar
+            :data="performanceChartData"
+            :options="chartOptions"
+          />
+        </div>
+      </UPageHero>
+    </ULandingSection>
 
     <ULandingSection>
       <ULandingCTA
@@ -176,14 +186,14 @@ const chartOptions = ref({
 }
 
 .line-numbered-code >>> pre {
-  margin-top: 0;
-  margin-bottom: 0;
   display: flex;
   flex: 1 1 0%;
-  overflow-x: auto;
-  padding: 1rem;
   line-height: 1.625;
   counter-reset: lines;
+}
+
+.hero-chart {
+  max-width: calc(min(100%, 80vw));
 }
 
 .line-numbered-code >>> pre code {
