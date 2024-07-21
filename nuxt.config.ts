@@ -25,5 +25,18 @@ export default defineNuxtConfig({
         braceStyle: '1tbs'
       }
     }
+  },
+  content: {
+    highlight: {
+      langs: [
+        'json',
+        'yaml',
+        'shell',
+        'swift'
+      ],
+      theme: {
+        default: 'github-light'
+      }
+    },
   }
 })

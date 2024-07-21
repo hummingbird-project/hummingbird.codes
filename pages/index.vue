@@ -1,5 +1,6 @@
 <script setup lang="ts">
-const { data: page } = await useAsyncData('index', () => queryContent('/').findOne())
+const { data: page } = await useAsyncData('index', () => queryContent('/').findOne());
+const { data: helloHumingbird } = await useAsyncData('hello-hummingbird', () => queryContent('/hello-hummingbird').findOne());
 
 useSeoMeta({
   title: page.value.title,
@@ -18,6 +19,11 @@ useSeoMeta({
       <template #title>
         <span class="logo-overlay">Hummingbird 2</span>
       </template>
+      <template #bottom>
+        <ULandingCard class="line-numbered-code">
+          <ContentDoc path="/hello-hummingbird" />
+        </ULandingCard>
+      </template>
       <template #headline>
         <UBadge
           v-if="page.hero.headline"
@@ -27,7 +33,7 @@ useSeoMeta({
         >
           <NuxtLink
             :to="page.hero.headline.to"
-            target="_blank"
+            target="_blanak"
             class="focus:outline-none"
             tabindex="-1"
           >
@@ -64,6 +70,10 @@ useSeoMeta({
       </UPageGrid>
     </ULandingSection>
 
+    <ULandingCard class="line-numbered-code">
+      <ContentDoc path="/basic-route" />
+    </ULandingCard>
+
     <ULandingSection>
       <ULandingCTA
         v-bind="page.cta"
@@ -85,5 +95,54 @@ useSeoMeta({
   background-size: 2em;
   background-origin: content-box;
   background-repeat: no-repeat;
+}
+
+.line-numbered-code {
+  max-width: calc(min(40em, 90%));
+  margin: 32pt auto;
+}
+
+.line-numbered-code >>> pre {
+  margin-top: 0;
+  margin-bottom: 0;
+  display: flex;
+  flex: 1 1 0%;
+  overflow-x: auto;
+  padding: 1rem;
+  line-height: 1.625;
+  counter-reset: lines;
+}
+
+.line-numbered-code >>> pre code {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.line-numbered-code >>> pre code .line {
+  display: inline-table;
+  min-height: 1rem;
+}
+
+@media (min-width: 500px) {
+  .line-numbered-code >>> pre code .line::before {
+    counter-increment: lines;
+    content: counter(lines);
+    width: 1rem;
+    margin-right: 1.5rem;
+    display: inline-block;
+    text-align: left;
+    color: rgba(115, 138, 148, 0.4);
+  }
+}
+
+.line-numbered-code >>> pre code .highlight {
+  background-color: #363b46;
+  display: block;
+  margin-right: -1em;
+  margin-left: -1em;
+  padding-right: 1em;
+  padding-left: 0.75em;
+  border-left: 0.25em solid red;
 }
 </style>
