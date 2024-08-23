@@ -76,7 +76,7 @@ const chartOptions = ref({
         <template #bottom>
           <div class="mt-16">
             <ULandingCard class="line-numbered-code">
-              <ContentDoc path="/hello-hummingbird" />
+              <ContentDoc path="/_hello-hummingbird" />
             </ULandingCard>
           </div>
         </template>
@@ -138,7 +138,7 @@ const chartOptions = ref({
         align="left"
       >
         <ULandingCard class="line-numbered-code">
-          <ContentDoc path="/basic-route" />
+          <ContentDoc path="/_basic-route" />
         </ULandingCard>
       </UPageHero>
     </ULandingSection>

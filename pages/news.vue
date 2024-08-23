@@ -53,6 +53,7 @@ useSeoMeta({
           :image="post.image"
           :date="post.date"
           :badge="post.badge"
+          :to="post.to"
           orientation="horizontal"
         />
       </UBlogList>

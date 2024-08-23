@@ -9,6 +9,7 @@ hero:
 posts:
   - title: Hummingbird 2 Release Candidate
     description: The Hummingbird 2 Release Candidate is now available, marking the final stages before the official release.
+    to: /news/hummingbird-2-release
     badge:
       label: Release
     image:
