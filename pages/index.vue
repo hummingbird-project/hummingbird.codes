@@ -143,7 +143,7 @@ const chartOptions = ref({
       </UPageHero>
     </ULandingSection>
 
-    <ULandingSection
+    <!-- <ULandingSection
       class="md:py-0 sm:py-0"
     >
       <UPageHero
@@ -159,7 +159,7 @@ const chartOptions = ref({
           />
         </div>
       </UPageHero>
-    </ULandingSection>
+    </ULandingSection> -->
 
     <ULandingSection>
       <ULandingCTA
@@ -183,11 +183,10 @@ const chartOptions = ref({
   height: 2em;
   margin-left: -1.5em;
   margin-top: -0.5em;
+  position: absolute;
   content: '';
-  overlay: auto;
   background-image: url("/logo.png");
   background-size: 2em;
-  background-origin: content-box;
   background-repeat: no-repeat;
 }
 
