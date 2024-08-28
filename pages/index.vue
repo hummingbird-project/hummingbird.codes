@@ -189,6 +189,10 @@ useSeoMeta({
     padding-right: 24pt;
     font-size: 32pt;
   }
+
+  .line-numbered-code {
+    font-size: 9.5pt;
+  }
 }
 
 .logo-overlay::before {

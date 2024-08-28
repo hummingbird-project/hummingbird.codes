@@ -2,7 +2,7 @@
 import Hummingbird
 import Meow // From MongoKitten
 
-router.get("/videos/:id") { req, context -> Video in
+router.get("/videos/:id") { req, context in
   let id = try context.parameters.require(
     "id",
     as: Reference<Video>.self
