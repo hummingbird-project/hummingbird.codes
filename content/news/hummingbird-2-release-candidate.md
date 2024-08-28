@@ -4,25 +4,30 @@ The Hummingbird 2 Release Candidate is now available, marking the final stages b
 
 ## Overview
 
-Hummingbird 2 is a complete re-write of the package based around structured concurrency. With this we get access to the many new features of Swift concurrency including AsyncSequences, task cancellation, task locals. The code is much easier to maintain as structured concurrency provides better clarity over task lifetimes. And this maintainability and clarity is also transferred to the backends you write with Hummingbird 2.
+We started the path to Hummingbird v2.0 in May 2023. I wrote a small experimental server using SwiftNIO's (then new) communication layer between their own EventLoop based APIs and Swift concurrency. A lot of what was learned from this small project was then used in the development of Hummingbird 2. Initially we wanted to release an interim version that included some of the features we experimented with earlier, but as time went on we realized it would be much better to do a release including our full plans for the framework. By January we had what we considered our alpha release. This release was pretty much feature complete, but needed some cleaning up. Since then we have been refining our public APIs and fixing bugs. The release candidate is the result of this work. 
+
+Hummingbird 2 is a complete re-write, based around structured concurrency. We have access to the many new features of Swift concurrency including AsyncSequences, task cancellation, task locals. The code is much easier to maintain as structured concurrency provides better clarity over task lifetimes. And this maintainability and clarity is also transferred to the backends you write with Hummingbird 2.
 
 ## Features
 
-Below is a list of some the features of Hummingbird 2
-- Structured concurrency. No need to worry about Swift NIO EventLoopFutures anymore.
-- Support for HTTP1.1/TLS and HTTP2
-- Two routers, one a traditional trie based router and the other built using a result builder.
-- Router middleware, including implementations of File serving, CORS, logging, metrics and tracing. 
+Hummingbird 2 comes with a repository full of pre-built examples. This includes examples with various different databases, JWT, AWS Lambda, Fluent, HTTP proxies, Passkeys and more.
+
+- Support for a flexible HTTP layer. With official support for HTTP1.1/TLS, HTTP2 and AWS Lambda
+- Two new routers. A traditional but extremely optimised trie based router and a result builder based routing system.
+- Pre-built middleware for your routes including:
+  - File Serving (from the File System or externally)
+  - CORS support
+  - Observability (logging, metrics and tracing)
 - Integration with [Swift Service Lifecycle](https://github.com/swift-server/swift-service-lifecycle).
 - Uses new [HTTP types](https://github.com/apple/swift-http-types) from Apple.
 
 Additional packages provide more features including
-- Support for WebSockets.
-- Authentication framework.
-- Jobs framework, for offloading work to other servers.
-- Mustache templating system for generating dynamic content.
+- Support for [WebSocket](https://github.com/hummingbird-project/hummingbird-websocket) clients and servers, with all new structured concurrency APIs and support for compression.  
+- An updated [authentication framework](https://github.com/hummingbird-project/hummingbird-auth), leveraging request contexts for passing authentication states into routes. 
+- [Jobs](https://github.com/hummingbird-project/swift-jobs), a Job Queue framework used to persist and offload work to other systems.
+- [Mustache templating](https://github.com/hummingbird-project/swift-mustache) support for generating dynamic content.
 - Integration with common packages like [FluentKit](https://github.com/vapor/fluent-kit) and [RediStack](https://github.com/swift-server/redistack).
-- Request decompression and response compression.
+- [HTTP compression/decompression](https://github.com/hummingbird-project/hummingbird-compression) support through middleware.
 
 ## Flexible
 
@@ -30,4 +35,6 @@ Hummingbird is still the flexible framework you know, if not more so now. Add yo
 
 ## Try it!
 
-If you want to give it a go, you can follow the instructions on the [getting started](https://docs.hummingbird.codes/2.0/documentation/hummingbird/gettingstarted) help page.
+You can follow the instructions on the [getting started](https://docs.hummingbird.codes/2.0/documentation/hummingbird/gettingstarted) help page.
+
+Also consider visiting the community's [Discord](https://discord.gg/7ME3nZ7mP2) server.  
