@@ -19,7 +19,7 @@ const notFoundLinks: [Button] = [{
 </script>
 
 <template>
-  <ULandingSection>
+  <UContainer>
     <UPage>
       <UPageBody prose>
         <ContentDoc>
@@ -35,5 +35,5 @@ const notFoundLinks: [Button] = [{
         </ContentDoc>
       </UPageBody>
     </UPage>
-  </ULandingSection>
+  </UContainer>
 </template>
