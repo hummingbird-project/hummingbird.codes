@@ -72,7 +72,9 @@ useSeoMeta({
         :links="page.hero.links"
       >
         <template #title>
-          <span class="logo-overlay">Hummingbird</span>
+          <div class="logo-container">
+            <span class="logo-overlay">Hummingbird</span>
+          </div>
         </template>
         <template #bottom>
           <div class="mt-16">
@@ -181,10 +183,18 @@ useSeoMeta({
   z-index: -1;
 }
 
+@media (max-width: 500px) {
+  .logo-container {
+    padding-left: 24pt;
+    padding-right: 24pt;
+    font-size: 32pt;
+  }
+}
+
 .logo-overlay::before {
   width: 2em;
   height: 2em;
-  margin-left: -1.5em;
+  margin-left: -1.7em;
   margin-top: -0.5em;
   position: absolute;
   content: '';
