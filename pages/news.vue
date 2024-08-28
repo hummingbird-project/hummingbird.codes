@@ -53,8 +53,10 @@ useSeoMeta({
           :image="post.image"
           :date="post.date"
           :badge="post.badge"
+          :authors="post.authors"
           :to="post.to"
           orientation="horizontal"
+          style="align-content: flex-start;"
         />
       </UBlogList>
     </ULandingSection>
