@@ -56,9 +56,15 @@ useSeoMeta({
           :authors="post.authors"
           :to="post.to"
           orientation="horizontal"
-          style="align-content: flex-start;"
+          class="content-start"
         />
       </UBlogList>
     </ULandingSection>
   </div>
 </template>
+
+<style scoped>
+.content-start {
+  align-content: start;
+}
+</style>
