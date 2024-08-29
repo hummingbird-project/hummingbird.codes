@@ -37,7 +37,9 @@ Additional packages provide more features including
 
 Hummingbird is still the flexible framework you know, more so now than ever before. Add your own middleware to edit requests and responses as they pass through the router. Use your own type to define the contextual data that is passed through the router alongside the HTTP request. If you don't like, or need a new feature the router implementation or transport implementation can be replaced with your own.
 
-## Try it!
+Hummingbird is a feature rich, robust and performant solution, ready to implement your next server application!
+
+## Try it
 
 You can follow the instructions on the [getting started](https://docs.hummingbird.codes/2.0/documentation/hummingbird/gettingstarted) help page.
 
