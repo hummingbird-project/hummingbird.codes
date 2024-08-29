@@ -2,7 +2,7 @@ title: Hummingbird - Ecosystem of Packages
 description: Hummingbird has a rich ecosystem of mature packages to help you build your backend.
 hero:
   title: Ecosystem Highlights
-  description: Some highlights packages that are commonly used with Hummingbird.
+  description: Some highlighted packages that are commonly used with Hummingbird.
   links:
     - label: Get started
       icon: i-heroicons-arrow-right-20-solid
@@ -54,7 +54,7 @@ databases:
       to: https://github.com/swift-server/swift-kafka-clien
 extensions:
   title: Official Extensions
-  description: There are official extensions to cover your use cases.
+  description: There are official extensions to cover many of your use cases.
   items:
     - title: HummingbirdWebSocket
       description: WebSocket upgrade support for the Hummingbird server framework.
@@ -111,25 +111,30 @@ misc:
       description: JSON Web Token signing and verification using Swift-Crypto.
       icon: i-simple-icons-jsonwebtokens
       to: https://github.com/vapor/jwt-kit
-      class: col-start-3 col-span-4 row-span-2
     - title: WebAuthn
       description: WebAuthn (Passkey) support.
       icon: i-simple-icons-webauthn
       to: https://github.com/swift-server/webauthn-swift
-      class: col-span-4 row-span-2
     - title: Mustache
-      description: Package for rendering Mustache templates.
-      icon: i-heroicons-todo
+      description: Package for rendering dynamic content using Mustache templates.
+      icon: i-mdi-mustache
       to: https://github.com/hummingbird-project/swift-mustache
+    - title: Jobs
+      description: Job queue used to persist and offload work to other servers.
+      icon: i-fluent-people-queue-24-regular
+      to: https://github.com/hummingbird-project/swift-jobs
     - title: APNSwift
       description: A non-blocking Swift module for sending remote Apple Push Notification requests to APNS built on AsyncHttpClient.
-      icon: i-simple-icons-todo
+      icon: i-ic-baseline-apple
       to: https://github.com/swift-server-community/APNSwift
+      class: col-span-3
     - title: Soto
       description: Swift language SDK for Amazon Web Services (AWS)
-      icon: i-simple-icons-aws
+      icon: i-mdi-aws
       to: https://github.com/soto-project/soto
+      class: col-span-3
     - title: MQTTNIO
       description: A SwiftNIO based MQTT v3.1.1 and v5.0 client.
       icon: i-simple-icons-mqtt
       to: https://github.com/swift-server-community/mqtt-nio
+      class: col-span-3
