@@ -53,10 +53,18 @@ useSeoMeta({
           :image="post.image"
           :date="post.date"
           :badge="post.badge"
+          :authors="post.authors"
           :to="post.to"
           orientation="horizontal"
+          class="content-start"
         />
       </UBlogList>
     </ULandingSection>
   </div>
 </template>
+
+<style scoped>
+.content-start {
+  align-content: start;
+}
+</style>
