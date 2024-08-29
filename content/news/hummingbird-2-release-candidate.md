@@ -4,13 +4,17 @@ The Hummingbird 2 Release Candidate is now available, marking the final stages b
 
 ## Overview
 
-We started the path to Hummingbird v2.0 in May 2023. I wrote a small experimental server using SwiftNIO's (then new) communication layer between their own EventLoop based APIs and Swift concurrency. A lot of what was learned from this small project was then used in the development of Hummingbird 2. Initially we wanted to release an interim version that included some of the features we experimented with earlier, but as time went on we realized it would be much better to do a release including our full plans for the framework. By January we had what we considered our alpha release. This release was pretty much feature complete, but needed some cleaning up. Since then we have been refining our public APIs and fixing bugs. The release candidate is the result of this work. 
+We started the path to Hummingbird v2.0 in May 2023. I wrote a small experimental server using SwiftNIO's (then new) communication layer between their own EventLoop based APIs and Swift concurrency. A lot of what was learned from this project was used in the development of Hummingbird 2. 
+
+Initially we wanted to release an interim version that included some of the features we experimented with earlier. As time went on, we realized it would be much better to do a release including our full plans for the framework. By January we had what we considered our alpha release. 
+
+While this release was pretty much feature complete, it needed some cleaning up. Since then we have been refining our public APIs and fixing bugs. The release candidate is the result of this work. 
 
 Hummingbird 2 is a complete re-write, based around structured concurrency. We have access to the many new features of Swift concurrency including AsyncSequences, task cancellation, task locals. The code is much easier to maintain as structured concurrency provides better clarity over task lifetimes. And this maintainability and clarity is also transferred to the backends you write with Hummingbird 2.
 
 ## Features
 
-Hummingbird 2 comes with a repository full of pre-built examples. This includes examples with various different databases, JWT, AWS Lambda, Fluent, HTTP proxies, Passkeys and more.
+Hummingbird 2 comes with a repository full of pre-built [examples](https://github.com/hummingbird-project/hummingbird-examples), including working with various different databases, JWT, AWS Lambda, Fluent, HTTP proxies, Passkeys and more.
 
 - Support for a flexible HTTP layer. With official support for HTTP1.1/TLS, HTTP2 and AWS Lambda
 - Two new routers. A traditional but extremely optimised trie based router and a result builder based routing system.
@@ -31,7 +35,7 @@ Additional packages provide more features including
 
 ## Flexible
 
-Hummingbird is still the flexible framework you know, if not more so now. Add your own middleware to edit requests and responses as they pass through the router, don't like the router implementation then replace it with your own, need to add a new network protocol, go ahead.
+Hummingbird is still the flexible framework you know, more so now than ever before. Add your own middleware to edit requests and responses as they pass through the router. Use your own types to pass request context data around. If you don't like, or need a new feature the router implementation or transport implementation can be replaced with your own.
 
 ## Try it!
 
