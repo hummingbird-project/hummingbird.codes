@@ -35,7 +35,7 @@ Additional packages provide more features including
 
 ## Flexible
 
-Hummingbird is still the flexible framework you know, more so now than ever before. Add your own middleware to edit requests and responses as they pass through the router. Use your own types to pass request context data around. If you don't like, or need a new feature the router implementation or transport implementation can be replaced with your own.
+Hummingbird is still the flexible framework you know, more so now than ever before. Add your own middleware to edit requests and responses as they pass through the router. Use your own type to define the contextual data that is passed through the router alongside the HTTP request. If you don't like, or need a new feature the router implementation or transport implementation can be replaced with your own.
 
 ## Try it!
 
