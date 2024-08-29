@@ -41,6 +41,6 @@ Hummingbird is a feature rich, robust and performant solution, ready to implemen
 
 ## Try it
 
-You can follow the instructions on the [getting started](https://docs.hummingbird.codes/2.0/documentation/hummingbird/gettingstarted) help page.
+You can follow the instructions on the [getting started](https://docs.hummingbird.codes/2.0/documentation/hummingbird/gettingstarted) help page, or look at one of our many [examples](https://github.com/hummingbird-project/hummingbird-examples).
 
 Also consider visiting the community's [Discord](https://discord.gg/7ME3nZ7mP2) server.  
