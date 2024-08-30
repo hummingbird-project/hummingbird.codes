@@ -16,8 +16,8 @@ fi
 
 STAGING_DISTRIBUTION_ID=EYMMXRXBFOIF7
 PROD_DISTRIBUTION_ID=E1WY5ZRQPDX7NV
-STAGING_S3_PATH=s3://hummingbird.codes/staging/
-PROD_S3_PATH=s3://hummingbird.codes/public/
+STAGING_S3_PATH=s3://staging.hummingbird.codes/
+PROD_S3_PATH=s3://hummingbird.codes/
 
 S3_PATH="$STAGING_S3_PATH"
 DISTRIBUTION_ID="$STAGING_DISTRIBUTION_ID"
