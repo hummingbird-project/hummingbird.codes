@@ -1,8 +1,9 @@
 <script setup lang="ts">
-import { Bar } from 'vue-chartjs'
+// import { Bar } from 'vue-chartjs'
 import BackgroundIcons from '~/components/BackgroundIcons.vue';
 
 const { data: page } = await useAsyncData('index', () => queryContent('/').findOne());
+const { data: basicRoute } = await useAsyncData('_basic-route', () => queryContent('/_basic-route').findOne());
 
 useSeoMeta({
   title: page.value.title,
@@ -11,53 +12,53 @@ useSeoMeta({
   ogDescription: page.value.description
 })
 
-const performanceChartData = ref({
-  labels: ['Laravel', 'Expess', 'Vapor', 'Hummingbird', 'Go', 'HB Core'],
-  datasets: [
-    {
-      label: 'Request per second',
-      data: [12990, 113117, 115300, 643202, 681653, 708562],
-      backgroundColor: [
-        'rgba(249, 50, 44, 0.4)',
-        'rgba(51, 153, 51, 0.4)',
-        'rgba(223, 62, 251, 0.4)',
-        'rgba(255, 165, 0, 0.8)',
-        'rgba(0, 128, 128, 0.4)',
-        'rgba(255, 165, 0, 0.8)'
-      ],
-      borderRadius: 4
-    }
-  ]
-})
-const chartOptions = ref({
-  responsive: true,
-  maintainAspectRatio: false,
-  plugins: {
-    tooltip: {
-      enabled: false
-    },
-    legend: {
-      display: false
-    }
-  },
-  scales: {
-    y: {
-      display: false
-    },
-    x: {
-      grid: {
-        display: false
-      },
-      // Don't show the x-axis labels
-      ticks: {
-        font: {
-          size: 9,
-          weight: 'bold'
-        }
-      }
-    }
-  }
-})
+// const performanceChartData = ref({
+//   labels: ['Laravel', 'Expess', 'Vapor', 'Hummingbird', 'Go', 'HB Core'],
+//   datasets: [
+//     {
+//       label: 'Request per second',
+//       data: [12990, 113117, 115300, 643202, 681653, 708562],
+//       backgroundColor: [
+//         'rgba(249, 50, 44, 0.4)',
+//         'rgba(51, 153, 51, 0.4)',
+//         'rgba(223, 62, 251, 0.4)',
+//         'rgba(255, 165, 0, 0.8)',
+//         'rgba(0, 128, 128, 0.4)',
+//         'rgba(255, 165, 0, 0.8)'
+//       ],
+//       borderRadius: 4
+//     }
+//   ]
+// })
+// const chartOptions = ref({
+//   responsive: true,
+//   maintainAspectRatio: false,
+//   plugins: {
+//     tooltip: {
+//       enabled: false
+//     },
+//     legend: {
+//       display: false
+//     }
+//   },
+//   scales: {
+//     y: {
+//       display: false
+//     },
+//     x: {
+//       grid: {
+//         display: false
+//       },
+//       // Don't show the x-axis labels
+//       ticks: {
+//         font: {
+//           size: 9,
+//           weight: 'bold'
+//         }
+//       }
+//     }
+//   }
+// })
 </script>
 
 <template>
@@ -71,7 +72,9 @@ const chartOptions = ref({
         :links="page.hero.links"
       >
         <template #title>
-          <span class="logo-overlay">Hummingbird</span>
+          <div class="logo-container">
+            <span class="logo-overlay">Hummingbird</span>
+          </div>
         </template>
         <template #bottom>
           <div class="mt-16">
@@ -131,22 +134,24 @@ const chartOptions = ref({
     <ULandingSection
       class="md:py-0 sm:py-0"
     >
-      <UPageHero
+      <ULandingHero
         :title="page.ecosystem.title"
         :description="page.ecosystem.description"
         :links="page.ecosystem.links"
         align="left"
       >
         <ULandingCard class="line-numbered-code">
-          <ContentDoc path="/_basic-route" />
+          <ContentRenderer :value="basicRoute">
+            <ContentRendererMarkdown :value="basicRoute" />
+          </ContentRenderer>
         </ULandingCard>
-      </UPageHero>
+      </ULandingHero>
     </ULandingSection>
 
     <!-- <ULandingSection
       class="md:py-0 sm:py-0"
     >
-      <UPageHero
+      <ULandingHero
         :title="page.performance.title"
         :description="page.performance.description"
         :links="page.performance.links"
@@ -158,7 +163,7 @@ const chartOptions = ref({
             :options="chartOptions"
           />
         </div>
-      </UPageHero>
+      </ULandingHero>
     </ULandingSection> -->
 
     <ULandingSection>
@@ -178,10 +183,22 @@ const chartOptions = ref({
   z-index: -1;
 }
 
+@media (max-width: 500px) {
+  .logo-container {
+    padding-left: 24pt;
+    padding-right: 24pt;
+    font-size: 32pt;
+  }
+
+  .line-numbered-code {
+    font-size: 9.5pt;
+  }
+}
+
 .logo-overlay::before {
   width: 2em;
   height: 2em;
-  margin-left: -1.5em;
+  margin-left: -1.7em;
   margin-top: -0.5em;
   position: absolute;
   content: '';
