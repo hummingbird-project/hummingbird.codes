@@ -16,6 +16,38 @@ hero:
       color: gray
       to: https://swiftpackageindex.com/search?query=platform%3Alinux
       target: _blank
+extensions:
+  title: Official Extensions
+  description: There are official extensions to cover many of your use cases.
+  items:
+    - title: HummingbirdWebSocket
+      description: WebSocket upgrade support for the Hummingbird server framework.
+      icon: i-heroicons-globe-alt
+      to: https://github.com/hummingbird-project/hummingbird-websocket
+    - title: HummingbirdLambda
+      description: Run Hummingbird inside an AWS Lambda.
+      icon: i-simple-icons-awslambda
+      to: https://github.com/hummingbird-project/hummingbird-lambda
+    - title: HummingbirdAuth
+      description: Authentication framework and extensions for Hummingbird server framework.
+      icon: i-heroicons-lock-closed
+      to: https://github.com/hummingbird-project/hummingbird-auth
+    - title: OpenAPIHummingbird
+      description: Generate Swift client and server code from an OpenAPI document.
+      icon: i-simple-icons-swagger
+      to: https://github.com/swift-server/swift-openapi-hummingbird
+    - title: HummingbirdFluent
+      description: Hummingbird interface to the Fluent database ORM.
+      icon: i-heroicons-circle-stack
+      to: https://github.com/hummingbird-project/hummingbird-fluent
+    - title: HummingbirdCompression
+      description: Request decompression and response compression for Hummingbird
+      icon: i-simple-icons-swagger
+      to: https://github.com/hummingbird-project/hummingbird-compression
+    - title: HummingbirdRedis
+      description: Hummingbird interface to RediStack Swift library.
+      icon: i-simple-icons-redis
+      to: https://github.com/hummingbird-project/hummingbird-redis
 databases:
   title: Database Support
   description: Hummingbird supports a wide range of databases, tightly integrated through SwiftNIO.
@@ -52,38 +84,6 @@ databases:
       description: A Swift client for Apache Kafka.
       icon: i-simple-icons-apachekafka
       to: https://github.com/swift-server/swift-kafka-client
-extensions:
-  title: Official Extensions
-  description: There are official extensions to cover many of your use cases.
-  items:
-    - title: HummingbirdWebSocket
-      description: WebSocket upgrade support for the Hummingbird server framework.
-      icon: i-heroicons-globe-alt
-      to: https://github.com/hummingbird-project/hummingbird-websocket
-    - title: HummingbirdLambda
-      description: Run Hummingbird inside an AWS Lambda.
-      icon: i-simple-icons-awslambda
-      to: https://github.com/hummingbird-project/hummingbird-lambda
-    - title: HummingbirdAuth
-      description: Authentication framework and extensions for Hummingbird server framework.
-      icon: i-heroicons-lock-closed
-      to: https://github.com/hummingbird-project/hummingbird-auth
-    - title: OpenAPIHummingbird
-      description: Generate Swift client and server code from an OpenAPI document.
-      icon: i-simple-icons-swagger
-      to: https://github.com/swift-server/swift-openapi-hummingbird
-    - title: HummingbirdFluent
-      description: Hummingbird interface to the Fluent database ORM.
-      icon: i-heroicons-circle-stack
-      to: https://github.com/hummingbird-project/hummingbird-fluent
-    - title: HummingbirdCompression
-      description: Request decompression and response compression for Hummingbird
-      icon: i-simple-icons-swagger
-      to: https://github.com/hummingbird-project/hummingbird-compression
-    - title: HummingbirdRedis
-      description: Hummingbird interface to RediStack Swift library.
-      icon: i-simple-icons-redis
-      to: https://github.com/hummingbird-project/hummingbird-redis
 observability:
   title: Observability
   description: Observability is integrated throughout the stack.
