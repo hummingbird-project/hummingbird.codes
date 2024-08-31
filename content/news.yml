@@ -1,7 +1,8 @@
 title: Hummingbird 2 - Web Framework for Swift
 description: Hummingbird 2 is a cross-platform web server framework for Swift.
 hero:
-  title: Latest News
+  title: News
+  description: Latest news and developments from Hummingbird.
   headline:
     label: Hummingbird 2 Release Candidate
     to: /news/hummingbird-2-release-candidate

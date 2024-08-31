@@ -13,6 +13,7 @@ useSeoMeta({
   <div>
     <ULandingHero
       :title="page.hero.title"
+      :description="page.hero.description"
     >
       <template #headline>
         <UBadge

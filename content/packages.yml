@@ -1,7 +1,7 @@
 title: Hummingbird - Ecosystem of Packages
 description: Hummingbird has a rich ecosystem of mature packages to help you build your backend.
 hero:
-  title: Ecosystem Highlights
+  title: Ecosystem
   description: Some highlighted packages that are commonly used with Hummingbird.
   links:
     - label: Get started
@@ -29,7 +29,7 @@ databases:
       icon: i-simple-icons-mysql
       to: https://github.com/vapor/mysql-nio
     - title: SQLiteNIO
-      description: Non-blocking, event-driven Swift client for SQLite built on SwiftNIO.
+      description: Non-blocking wrapper for libsqlite3-dev using SwiftNIO.
       icon: i-simple-icons-sqlite
       to: https://github.com/vapor/sqlite-nio
     - title: OracleNIO
@@ -51,7 +51,7 @@ databases:
     - title: Kafka
       description: A Swift client for Apache Kafka.
       icon: i-simple-icons-apachekafka
-      to: https://github.com/swift-server/swift-kafka-clien
+      to: https://github.com/swift-server/swift-kafka-client
 extensions:
   title: Official Extensions
   description: There are official extensions to cover many of your use cases.
