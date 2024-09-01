@@ -1,4 +1,4 @@
-title: Hummingbird - Web Framework for Swift
+title: Hummingbird
 description: Hummingbird is a cross-platform web server framework for Swift.
 hero:
   title: Hummingbird
@@ -42,7 +42,7 @@ features:
       description: Hummingbird makes your backends blazing fast, while ARC replaces garbage collection.
       icon: i-heroicons-rocket-launch
     - title: Cross-Platform
-      description: Swift runs on your platform. Linux, macOS, and iOS and Windows.
+      description: Swift runs on your platform. Linux, macOS, and iOS.
       icon: i-simple-icons-linux
 ecosystem:
   title: Every Package you need

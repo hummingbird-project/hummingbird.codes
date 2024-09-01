@@ -1,7 +1,7 @@
-title: Hummingbird - Ecosystem of Packages
+title: Hummingbird - Ecosystem
 description: Hummingbird has a rich ecosystem of mature packages to help you build your backend.
 hero:
-  title: Ecosystem Highlights
+  title: Ecosystem
   description: Some highlighted packages that are commonly used with Hummingbird.
   links:
     - label: Get started
@@ -16,42 +16,6 @@ hero:
       color: gray
       to: https://swiftpackageindex.com/search?query=platform%3Alinux
       target: _blank
-databases:
-  title: Database Support
-  description: Hummingbird supports a wide range of databases, tightly integrated through SwiftNIO.
-  items:
-    - title: PostgresNIO
-      description: Non-blocking, event-driven Swift client for PostgreSQL built on SwiftNIO.
-      icon: i-simple-icons-postgresql
-      to: https://github.com/vapor/postgres-nio
-    - title: MySQLNIO
-      description: Non-blocking, event-driven Swift client for MySQL built on SwiftNIO.
-      icon: i-simple-icons-mysql
-      to: https://github.com/vapor/mysql-nio
-    - title: SQLiteNIO
-      description: Non-blocking, event-driven Swift client for SQLite built on SwiftNIO.
-      icon: i-simple-icons-sqlite
-      to: https://github.com/vapor/sqlite-nio
-    - title: OracleNIO
-      description: Non-blocking, event-driven Swift client for Oracle Databases built on SwiftNIO.
-      icon: i-simple-icons-oracle
-      to: https://github.com/lovetodream/oracle-nio
-    - title: RediStack
-      description: A non-blocking Swift client for Redis built on top of SwiftNIO.
-      icon: i-simple-icons-redis
-      to: https://github.com/swift-server/redistack
-    - title: MongoKitten
-      description: A fast, pure swift MongoDB driver based on SwiftNIO and built for Server Side Swift.
-      icon: i-simple-icons-mongodb
-      to: https://github.com/orlandos-nl/MongoKitten
-    - title: Cassandra
-      description: A Swift client for Apache Cassandra.
-      icon: i-simple-icons-apachecassandra
-      to: https://github.com/apple/swift-cassandra-client
-    - title: Kafka
-      description: A Swift client for Apache Kafka.
-      icon: i-simple-icons-apachekafka
-      to: https://github.com/swift-server/swift-kafka-clien
 extensions:
   title: Official Extensions
   description: There are official extensions to cover many of your use cases.
@@ -84,6 +48,42 @@ extensions:
       description: Hummingbird interface to RediStack Swift library.
       icon: i-simple-icons-redis
       to: https://github.com/hummingbird-project/hummingbird-redis
+databases:
+  title: Database Support
+  description: Hummingbird supports a wide range of databases, tightly integrated through SwiftNIO.
+  items:
+    - title: PostgresNIO
+      description: Non-blocking, event-driven Swift client for PostgreSQL built on SwiftNIO.
+      icon: i-simple-icons-postgresql
+      to: https://github.com/vapor/postgres-nio
+    - title: MySQLNIO
+      description: Non-blocking, event-driven Swift client for MySQL built on SwiftNIO.
+      icon: i-simple-icons-mysql
+      to: https://github.com/vapor/mysql-nio
+    - title: SQLiteNIO
+      description: Non-blocking wrapper for libsqlite3-dev using SwiftNIO.
+      icon: i-simple-icons-sqlite
+      to: https://github.com/vapor/sqlite-nio
+    - title: OracleNIO
+      description: Non-blocking, event-driven Swift client for Oracle Databases built on SwiftNIO.
+      icon: i-simple-icons-oracle
+      to: https://github.com/lovetodream/oracle-nio
+    - title: RediStack
+      description: A non-blocking Swift client for Redis built on top of SwiftNIO.
+      icon: i-simple-icons-redis
+      to: https://github.com/swift-server/redistack
+    - title: MongoKitten
+      description: A fast, pure swift MongoDB driver based on SwiftNIO and built for Server Side Swift.
+      icon: i-simple-icons-mongodb
+      to: https://github.com/orlandos-nl/MongoKitten
+    - title: Cassandra
+      description: A Swift client for Apache Cassandra.
+      icon: i-simple-icons-apachecassandra
+      to: https://github.com/apple/swift-cassandra-client
+    - title: Kafka
+      description: A Swift client for Apache Kafka.
+      icon: i-simple-icons-apachekafka
+      to: https://github.com/swift-server/swift-kafka-client
 observability:
   title: Observability
   description: Observability is integrated throughout the stack.

@@ -1,23 +1,29 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   extends: ['@nuxt/ui-pro'],
-  modules: ['@nuxt/content', '@nuxt/eslint', '@nuxt/ui', '@nuxt/fonts', "@nuxt/image"],
+  modules: ['@nuxt/content', '@nuxt/eslint', '@nuxt/ui', '@nuxt/fonts', '@nuxt/image'],
+
   ui: {
-    icons: ['heroicons', 'simple-icons']
+    icons: ['heroicons', 'simple-icons', 'mdi']
   },
+
   routeRules: {
     '/': { prerender: true }
   },
+
   devtools: {
     enabled: true
   },
+
   typescript: {
     strict: false
   },
+
   colorMode: {
     preference: 'system',
     fallback: 'light'
   },
+
   eslint: {
     config: {
       stylistic: {
@@ -26,6 +32,7 @@ export default defineNuxtConfig({
       }
     }
   },
+
   content: {
     highlight: {
       langs: [
@@ -38,5 +45,7 @@ export default defineNuxtConfig({
         default: 'github-light'
       }
     },
-  }
+  },
+
+  compatibilityDate: '2024-08-31'
 })

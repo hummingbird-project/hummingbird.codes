@@ -185,8 +185,6 @@ useSeoMeta({
 
 @media (max-width: 500px) {
   .logo-container {
-    padding-left: 24pt;
-    padding-right: 24pt;
     font-size: 32pt;
   }
 
@@ -207,6 +205,9 @@ useSeoMeta({
   background-repeat: no-repeat;
 }
 
+.logo-overlay {
+  margin-left: 1.7em;
+}
 .line-numbered-code {
   max-width: calc(min(90vw, 40em, 100%));
   overflow: none;
