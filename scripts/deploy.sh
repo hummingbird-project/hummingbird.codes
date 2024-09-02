@@ -14,19 +14,12 @@ if ! has_command bun ; then
     exit 1
 fi
 
-STAGING_DISTRIBUTION_ID=EYMMXRXBFOIF7
-PROD_DISTRIBUTION_ID=E1WY5ZRQPDX7NV
-STAGING_S3_PATH=s3://staging.hummingbird.codes/
-PROD_S3_PATH=s3://hummingbird.codes/
-
-S3_PATH="$STAGING_S3_PATH"
-DISTRIBUTION_ID="$STAGING_DISTRIBUTION_ID"
+SITE_ENV="staging"
 
 while getopts ":p" OPT; do
   case "$OPT" in
     "p")
-      S3_PATH="$PROD_S3_PATH"
-      DISTRIBUTION_ID="$PROD_DISTRIBUTION_ID"
+      SITE_ENV="production"
       shift
       ;;
     *)
@@ -36,6 +29,16 @@ while getopts ":p" OPT; do
       ;;
   esac
 done
+
+export NUXT_SITE_ENV=$SITE_ENV
+
+if [[ $SITE_ENV == "production" ]]; then
+  S3_PATH=s3://hummingbird.codes/
+  DISTRIBUTION_ID=E1WY5ZRQPDX7NV
+else
+  S3_PATH=s3://staging.hummingbird.codes/
+  DISTRIBUTION_ID=EYMMXRXBFOIF7
+fi
 
 # install latest modules
 bun install
