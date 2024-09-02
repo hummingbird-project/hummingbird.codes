@@ -1,9 +1,10 @@
 <script setup lang="ts">
 // import { Bar } from 'vue-chartjs'
-import BackgroundIcons from '~/components/BackgroundIcons.vue';
+import BackgroundIcons from '~/components/BackgroundIcons.vue'
 
-const { data: page } = await useAsyncData('index', () => queryContent('/').findOne());
-const { data: basicRoute } = await useAsyncData('_basic-route', () => queryContent('/_basic-route').findOne());
+const { data: page } = await useAsyncData('index', () => queryContent('/').findOne())
+const { data: hello } = await useAsyncData('_hello-hummingbird', () => queryContent('/_hello-hummingbird').findOne())
+const { data: basicRoute } = await useAsyncData('_basic-route', () => queryContent('/_basic-route').findOne())
 
 useSeoMeta({
   title: page.value.title,
@@ -79,7 +80,9 @@ useSeoMeta({
         <template #bottom>
           <div class="mt-16">
             <ULandingCard class="line-numbered-code">
-              <ContentDoc path="/_hello-hummingbird" />
+              <ContentRenderer :value="hello">
+                <ContentRendererMarkdown :value="hello" />
+              </ContentRenderer>
             </ULandingCard>
           </div>
         </template>
