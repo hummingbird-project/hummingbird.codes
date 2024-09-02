@@ -8,7 +8,8 @@ export default defineNuxtConfig({
     '@nuxt/fonts',
     '@nuxt/image',
     '@nuxtjs/sitemap',
-    '@nuxtjs/robots'
+    '@nuxtjs/robots',
+    '@nuxt/icon'
   ],
 
   site: {
@@ -16,8 +17,10 @@ export default defineNuxtConfig({
     name: 'Hummingbird Web Framework'
   },
 
-  ui: {
-    icons: ['heroicons', 'simple-icons', 'mdi']
+  icon: {
+    serverBundle: {
+      collections: ['heroicons', 'simple-icons', 'mdi', 'fluent']
+    }
   },
 
   routeRules: {

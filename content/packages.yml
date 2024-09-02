@@ -136,7 +136,7 @@ misc:
       class: col-span-4
     - title: APNSwift
       description: A non-blocking Swift module for sending remote Apple Push Notification requests to APNS built on AsyncHttpClient.
-      icon: i-ic-baseline-apple
+      icon: i-simple-icons-apple
       to: https://github.com/swift-server-community/APNSwift
       class: col-span-4
     - title: Soto
