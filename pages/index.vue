@@ -209,7 +209,7 @@ useSeoMeta({
 }
 
 .logo-overlay {
-  margin-left: 1.7em;
+  margin-left: 1.5em;
 }
 .line-numbered-code {
   max-width: calc(min(90vw, 40em, 100%));
