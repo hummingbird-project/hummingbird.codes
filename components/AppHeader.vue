@@ -19,7 +19,7 @@ const links = computed(() => [{
     <template #logo>
       <img
         src="/logo@100px.png"
-        class="w-8 h-8 mx-auto"
+        class="w-8 h-8 mx-auto header-logo"
       >
       Hummingbird
     </template>
@@ -36,3 +36,9 @@ const links = computed(() => [{
     </template>
   </UHeader>
 </template>
+
+<style scoped>
+.header-logo {
+  margin-right: -0.5em;
+}
+</style>

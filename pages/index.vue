@@ -203,7 +203,7 @@ useSeoMeta({
   margin-top: -0.5em;
   position: absolute;
   content: '';
-  background-image: url("/logo.png");
+  background-image: url("/logo@400px.png");
   background-size: 2em;
   background-repeat: no-repeat;
 }
