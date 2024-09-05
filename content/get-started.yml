@@ -20,7 +20,7 @@ swift:
       leadingIcon: i-simple-icons-xcode
       size: xl
     - label: Swiftly (Linux)
-      to: https://github.com/swiftlang/swiftly
+      to: https://swiftlang.github.io/swiftly/
       leadingIcon: i-simple-icons-linux
       color: gray
       size: xl
@@ -91,3 +91,4 @@ cta:
       to: https://discord.gg/7ME3nZ7mP2
       leadingIcon: i-simple-icons-discord
       size: xl
+      color: gray

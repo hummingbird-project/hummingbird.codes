@@ -12,7 +12,7 @@ hero:
       icon: i-heroicons-arrow-right-20-solid
       trailing: true
       size: xl
-      to: https://github.com/hummingbird-project/hummingbird
+      to: https://docs.hummingbird.codes/2.0/documentation/hummingbird/gettingstarted
       target: _blank
     - label: Example Projects
       icon: i-simple-icons-github
