@@ -22,18 +22,30 @@ const notFoundLinks: [Button] = [{
   <UContainer>
     <UPage>
       <UPageBody prose>
-        <ContentDoc>
-          <template #v-slot="{ data }">
-            <ContentRenderer :data="data" />
-          </template>
-          <template #not-found>
-            <ULandingHero
-              title="Page not found"
-              :links="notFoundLinks"
-            />
-          </template>
-        </ContentDoc>
+        <div class="page-content">
+          <ContentDoc>
+            <template #v-slot="{ data }">
+              <ContentRenderer
+                :data="data"
+              />
+            </template>
+            <template #not-found>
+              <ULandingHero
+                title="Page not found"
+                :links="notFoundLinks"
+              />
+            </template>
+          </ContentDoc>
+        </div>
       </UPageBody>
     </UPage>
   </UContainer>
 </template>
+
+<style scoped>
+.page-content {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
