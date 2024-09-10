@@ -1,6 +1,6 @@
 ---
 title: Hummingbird 2
-description: Hummingbird 2 - the swift server framework has been released.
+description: Version 2.0 of Hummingbird - the swift server framework has been released.
 draft: true
 ---
 # Hummingbird 2
