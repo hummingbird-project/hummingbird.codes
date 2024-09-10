@@ -1,3 +1,7 @@
+---
+title: Hummingbird 2 release candidate
+description: The Hummingbird 2 Release Candidate is now available, marking the final stages before the official release.
+---
 # Hummingbird 2 release candidate
 
 The Hummingbird 2 Release Candidate is now available, marking the final stages before the official release.

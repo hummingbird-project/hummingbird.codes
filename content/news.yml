@@ -4,10 +4,22 @@ hero:
   title: News
   description: Latest news and developments from Hummingbird.
   headline:
-    label: Hummingbird 2 Release Candidate
-    to: /news/hummingbird-2-release-candidate
+    label: Hummingbird 2
+    to: /news/hummingbird-2
     icon: i-heroicons-arrow-top-right-on-square-20-solid
 posts:
+  - title: Hummingbird 2
+    description: Hummingbird 2 has been released
+    to: /news/hummingbird-2
+    date: 11 Sep 2024
+    image:
+      src: hummingbird2-fireworks.jpg
+      alt: Fireworks
+    authors:
+      - name: Adam Fowler
+        avatar:
+          src: https://github.com/adam-fowler.png
+        to: https://mastodon.scot/@opticalaberration
   - title: Hummingbird 2 Release Candidate
     description: The Hummingbird 2 Release Candidate is now available, marking the final stages before the official release.
     to: /news/hummingbird-2-release-candidate
@@ -15,3 +27,8 @@ posts:
     image:
       src: logo.png
       alt: Hummingbird Logo
+    authors:
+      - name: Adam Fowler
+        avatar:
+          src: https://github.com/adam-fowler.png
+        to: https://mastodon.scot/@opticalaberration
