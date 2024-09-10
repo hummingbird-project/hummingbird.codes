@@ -1,5 +1,6 @@
 <script setup lang="ts">
 const { data: page } = await useAsyncData('news', () => queryContent('/news').findOne())
+const { data: authors } = await useAsyncData('authors', () => queryContent('/authors').findOne())
 
 useSeoMeta({
   title: page.value.title,
@@ -45,7 +46,7 @@ useSeoMeta({
     </ULandingHero>
 
     <ULandingSection>
-      <UBlogList orientation="vertical">
+      <UBlogList orientation="horizontal">
         <UBlogPost
           v-for="(post, index) in page.posts"
           :key="index"
@@ -54,10 +55,10 @@ useSeoMeta({
           :image="post.image"
           :date="post.date"
           :badge="post.badge"
-          :authors="post.authors"
+          :authors="(post.authors as Array<string>).map(author => authors.authors[author])"
           :to="post.to"
           orientation="horizontal"
-          class="content-start"
+          class="blog-post"
         />
       </UBlogList>
     </ULandingSection>
@@ -65,7 +66,11 @@ useSeoMeta({
 </template>
 
 <style scoped>
-.content-start {
+.blog-post {
   align-content: start;
+  border-width: 1px;
+  border-radius: 1em;
+  padding: 1.5em;
+  background-color: #f8f8f8;
 }
 </style>

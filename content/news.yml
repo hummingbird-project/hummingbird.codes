@@ -4,31 +4,19 @@ hero:
   title: News
   description: Latest news and developments from Hummingbird.
   headline:
-    label: Hummingbird 2
+    label: Hummingbird 2 is out!
     to: /news/hummingbird-2
     icon: i-heroicons-arrow-top-right-on-square-20-solid
 posts:
-  - title: Hummingbird 2
-    description: Hummingbird 2 has been released
+  - title: Hummingbird 2 is out!
+    description: Hummingbird 2 has been released. The framework has been completely rebuilt from scratch with Swift concurrency taking a central role.
     to: /news/hummingbird-2
     date: 11 Sep 2024
-    image:
-      src: hummingbird2-fireworks.jpg
-      alt: Fireworks
     authors:
-      - name: Adam Fowler
-        avatar:
-          src: https://github.com/adam-fowler.png
-        to: https://mastodon.scot/@opticalaberration
+      - Adam
   - title: Hummingbird 2 Release Candidate
     description: The Hummingbird 2 Release Candidate is now available, marking the final stages before the official release.
     to: /news/hummingbird-2-release-candidate
     date: 1 July 2024
-    image:
-      src: logo.png
-      alt: Hummingbird Logo
     authors:
-      - name: Adam Fowler
-        avatar:
-          src: https://github.com/adam-fowler.png
-        to: https://mastodon.scot/@opticalaberration
+      - Adam
