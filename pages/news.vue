@@ -71,6 +71,15 @@ useSeoMeta({
   border-width: 1px;
   border-radius: 1em;
   padding: 1.5em;
-  background-color: #f8f8f8;
+}
+@media (prefers-color-scheme: light) {
+  .blog-post {
+    background-color: #f8f8f8;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .blog-post {
+    background-color: #222;
+  }
 }
 </style>
