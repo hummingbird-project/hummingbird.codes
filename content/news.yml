@@ -14,7 +14,12 @@ posts:
     date: 11 Sep 2024
     image:
       src: hummingbird2-fireworks.jpg
-      alt: Hummingbird Logo
+      alt: Fireworks
+    authors:
+      - name: Adam Fowler
+        avatar:
+          src: https://github.com/adam-fowler.png
+        to: https://mastodon.scot/@opticalaberration
   - title: Hummingbird 2 Release Candidate
     description: The Hummingbird 2 Release Candidate is now available, marking the final stages before the official release.
     to: /news/hummingbird-2-release-candidate
@@ -22,3 +27,8 @@ posts:
     image:
       src: logo.png
       alt: Hummingbird Logo
+    authors:
+      - name: Adam Fowler
+        avatar:
+          src: https://github.com/adam-fowler.png
+        to: https://mastodon.scot/@opticalaberration
