@@ -14,7 +14,11 @@ The time I started writing what was to become version 1 of the Hummingbird serve
 
 But when starting out building Hummingbird many of these were only proposals, or hadn't even been published so I wrote the framework with what was available at the time which was Swift NIO EventLoopFutures. As Swift concurrency proposals were accepted and implemented I started adding support for them in the framework. But when Hummingbird 1.0 was finally released, it was still inherently an EventLoopFuture based framework with a thin veneer of Swift concurrency layered on top of it. Because of this many features of Swift concurrency were unavailable to it eg structured concurrency, task locals, task cancellation. 
 
-Hummingbird 2 is a complete rewrite of the framework built on top of structured concurrency. The code is easier to read, maintain and reason about and this transfers to the backends built with it. This is the version of Hummingbird I wanted to write initially but wasn't able to because the language features weren't ready. With the imminent release of Swift 6 this is the perfect time to try out Hummingbird.
+Hummingbird 2 is a complete rewrite of the framework built on top of structured concurrency. The code is easier to read, maintain and reason about and this transfers to the backends built with it. This is the version of Hummingbird I wanted to write initially but wasn't able to because the language features weren't ready. 
+
+With the imminent release of Swift 6 this is the perfect time to try out Hummingbird.
+
+---
 
 Hummingbird consists of a number of packages. We are not doing a full release of all of these packages at the same time. Initially only [Hummingbird](https://github.com/hummingbird-project/hummingbird) and [HummingbirdWebSocket](https://github.com/hummingbird-project/hummingbird-websocket) will be available as 2.0. The rest of the packages will get a 2.0 release over the next couple of months.
 
