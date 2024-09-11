@@ -58,7 +58,7 @@ useSeoMeta({
           :authors="(post.authors as Array<string>).map(author => authors.authors[author])"
           :to="post.to"
           orientation="horizontal"
-          class="blog-post"
+          class="hb-blog-post bg-gray-100 dark:bg-gray-800"
         />
       </UBlogList>
     </ULandingSection>
@@ -66,20 +66,10 @@ useSeoMeta({
 </template>
 
 <style scoped>
-.blog-post {
+.hb-blog-post {
   align-content: start;
   border-width: 1px;
   border-radius: 1em;
   padding: 1.5em;
-}
-@media (prefers-color-scheme: light) {
-  .blog-post {
-    background-color: #f8f8f8;
-  }
-}
-@media (prefers-color-scheme: dark) {
-  .blog-post {
-    background-color: #222;
-  }
 }
 </style>
