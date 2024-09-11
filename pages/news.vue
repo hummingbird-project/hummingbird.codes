@@ -58,7 +58,7 @@ useSeoMeta({
           :authors="(post.authors as Array<string>).map(author => authors.authors[author])"
           :to="post.to"
           orientation="horizontal"
-          class="hb-blog-post bg-gray-100 dark:bg-gray-800"
+          class="hb-blog-post bg-white dark:bg-gray-800"
         />
       </UBlogList>
     </ULandingSection>
