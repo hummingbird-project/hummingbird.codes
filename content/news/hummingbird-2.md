@@ -1,7 +1,6 @@
 ---
 title: Hummingbird 2
 description: Version 2.0 of Hummingbird - the swift server framework has been released.
-draft: true
 ---
 # Hummingbird 2
 
@@ -20,6 +19,6 @@ With the imminent release of Swift 6 this is the perfect time to try out Humming
 
 ---
 
-Hummingbird consists of a number of packages. We are not doing a full release of all of these packages at the same time. Initially only [Hummingbird](https://github.com/hummingbird-project/hummingbird) and [HummingbirdWebSocket](https://github.com/hummingbird-project/hummingbird-websocket) will be available as 2.0. The rest of the packages will get a 2.0 release over the next couple of months.
+Hummingbird consists of a number of packages. We are not doing a full release of all of these packages at the same time. Initially only [hummingbird](https://github.com/hummingbird-project/hummingbird), [hummingbird-websocket](https://github.com/hummingbird-project/hummingbird-websocket) and [swift-openapi-hummingbird](https://github.com/swift-server/swift-openapi-hummingbird/) will be available as 2.0. The rest of the packages will get a 2.0 release over the next couple of months.
 
 You can find the full release notes for Hummingbird 2 [here](https://github.com/hummingbird-project/hummingbird/releases/tag/2.0.0).
