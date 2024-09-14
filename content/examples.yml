@@ -10,26 +10,31 @@ categories:
         library: https://github.com/soto-project/soto
         icon: i-simple-icons-amazonaws
         to: https://github.com/hummingbird-project/hummingbird-examples/tree/main/auth-cognito
+        class: col-span-4
       - title: JWT
         description: A JSON Web Token example project, leveraging JWTKit.
         library: https://github.com/vapor/jwt-kit
         icon: i-simple-icons-jsonwebtokens
         to: https://github.com/hummingbird-project/hummingbird-examples/tree/main/auth-jwt
+        class: col-span-4
       - title: SRP
         description: Secure Remote Password authentication.
         library: https://github.com/adam-fowler/swift-srp
         icon: i-heroicons-shield-check
         to: https://github.com/hummingbird-project/hummingbird-examples/tree/main/auth-srp
+        class: col-span-4
       - title: WebAuthn
         description: FIDO2 WebAuthn/PassKey authentication.
         library: https://github.com/swift-server/webauthn-swift
         icon: i-heroicons-key
         to: https://github.com/hummingbird-project/hummingbird-examples/tree/main/webauthn
+        class: col-span-4 col-start-3
       - title: Session Cookies
         description: Session Cookie based authorization
         library: https://github.com/hummingbird-project/hummingbird-auth
         icon: i-heroicons-ticket
         to: https://github.com/hummingbird-project/hummingbird-examples/tree/main/sessions
+        class: col-span-4
       # TODO: SIWA
       # APNS
   - title: Databases
@@ -56,27 +61,6 @@ categories:
         library: https://github.com/soto-project/soto
         icon: i-simple-icons-amazondynamodb
         to: https://github.com/hummingbird-project/hummingbird-examples/tree/main/todos-dynamodb
-      - title: OracleNIO
-        description: Examples that use Hummingbird with OracleNIO
-        library: https://github.com/lovetodream/oracle-nio
-        icon: i-simple-icons-oracle
-        to: https://github.com/kicsipixel/oracle-nio-examples
-  - title: Templating
-    description: |
-      Example projects demonstrating how to use templating engines with Hummingbird.
-    projects:
-      - title: Mustache
-        description: A example Mustache templating engine with Hummingbird.
-        icon: i-heroicons-document-text
-        to: https://github.com/hummingbird-project/hummingbird-examples/tree/main/html-form
-      - title: Elementary
-        description: Elementary templating engine with Hummingbird.
-        icon: i-simple-icons-html5
-        to: https://github.com/sliemeobn/elementary/tree/main/Examples/HummingbirdDemo
-      - title: Elementary HTMX
-        description: An HTMX example using the Elementary templating engine.
-        icon: i-simple-icons-htmx
-        to: https://github.com/sliemeobn/elementary-htmx/tree/main/Examples/HummingbirdDemo
   - title: Applications
     description: |
       Pre-built example applications using Hummingbird.
@@ -85,50 +69,67 @@ categories:
         description: Example project demonstrating how to create a proxy server using Hummingbird.
         icon: i-heroicons-globe-alt
         to: https://github.com/hummingbird-project/hummingbird-examples/tree/main/proxy-server
-      - title: WebSocket Echo Server
-        description: A WebSocket echo server.
-        icon: i-heroicons-globe-alt
-        to: https://github.com/hummingbird-project/hummingbird-examples/tree/main/websocket-echo
-      - title: Todo API
-        description: A more complete example which shows authentication, CRUD operations and mustache rendering all in one app.
-        icon: i-heroicons-check-circle
-        to: https://github.com/hummingbird-project/hummingbird-examples/tree/main/todos-auth-fluent
-      - title: WebSocket Chat App
-        description: Example project demonstrating how to create a WebSocket chat application using Hummingbird.
-        icon: i-heroicons-chat-bubble-left
-        to: https://github.com/hummingbird-project/hummingbird-examples/tree/main/websocket-chat
+        class: col-span-4
       - title: GraphQL
         description: A GraphQL API built with Hummingbird.
         icon: i-simple-icons-graphql
         to: https://github.com/hummingbird-project/hummingbird-examples/tree/main/graphql-server
+        class: col-span-4
       - title: AWS Lambda
         description: A Hummingbird application running on AWS Lambda.
         icon: i-simple-icons-awslambda
         to: https://github.com/hummingbird-project/hummingbird-examples/tree/main/todos-lambda
+        class: col-span-4
+      - title: WebSocket Chat App
+        description: Example project demonstrating how to create a WebSocket chat application using Hummingbird.
+        icon: i-heroicons-chat-bubble-left
+        to: https://github.com/hummingbird-project/hummingbird-examples/tree/main/websocket-chat
+        class: col-span-4
+      - title: WebSocket Echo Server
+        description: A WebSocket echo server.
+        icon: i-heroicons-globe-alt
+        to: https://github.com/hummingbird-project/hummingbird-examples/tree/main/websocket-echo
+        class: col-span-4
+      - title: Todo API
+        description: A more complete example which shows authentication, CRUD operations and mustache rendering all in one app.
+        icon: i-heroicons-check-circle
+        to: https://github.com/hummingbird-project/hummingbird-examples/tree/main/todos-auth-fluent
+        class: col-span-4
       # - title: GRPC
   - title: How-tos
     projects:
-      - title: Multipart Form
-        description: An example project that handles multipart form data.
-        icon: i-heroicons-document
-        to: https://github.com/hummingbird-project/hummingbird-examples/tree/main/multipart-form
       - title: HTTP2
         description: Demonstrates implementing HTTP2.
         icon: i-heroicons-h2
         to: https://github.com/hummingbird-project/hummingbird-examples/tree/main/http2
+        class: col-start-3 col-span-4
       - title: Jobs
         description: A job queue using the Jobs package and Hummingbird.
         icon: i-heroicons-cog
         to: https://github.com/hummingbird-project/hummingbird-examples/tree/main/jobs
+        class: col-span-4
       - title: Asynchronous Body Processing
         description: Example project demonstrating how to process request bodies asynchronously.
         icon: i-heroicons-arrow-path
         to: https://github.com/hummingbird-project/hummingbird-examples/tree/main/proxy-server
+        class: col-span-4
       - title: File Upload
         description: A demonstration of how to efficiently handle file uploads to disk.
         icon: i-heroicons-arrow-up-on-square
         to: https://github.com/hummingbird-project/hummingbird-examples/tree/main/upload
+        class: col-span-4
       - title: File Upload to S3
         description: A demonstration that shows uploading files to S3 using Hummingbird.
         icon: i-simple-icons-amazonaws
         to: https://github.com/hummingbird-project/hummingbird-examples/tree/main/upload-s3
+        class: col-span-4
+      - title: Mustache
+        description: A example Mustache templating engine with Hummingbird.
+        icon: i-heroicons-document-text
+        to: https://github.com/hummingbird-project/hummingbird-examples/tree/main/html-form
+        class: col-start-3 col-span-4
+      - title: Multipart Form
+        description: An example project that handles multipart form data.
+        icon: i-heroicons-document
+        to: https://github.com/hummingbird-project/hummingbird-examples/tree/main/multipart-form
+        class: col-span-4

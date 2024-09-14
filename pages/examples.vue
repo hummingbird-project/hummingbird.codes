@@ -24,7 +24,7 @@ useSeoMeta({
         <ULandingCard
           v-for="(project, index) in category.projects"
           :key="index"
-          :class="'col-span-3 row-span-2'"
+          :class="project.class || 'col-span-3 row-span-2'"
           :icon="project.icon"
           :title="project.title"
           :description="project.description"
