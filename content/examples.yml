@@ -56,6 +56,11 @@ categories:
         library: https://github.com/soto-project/soto
         icon: i-simple-icons-amazondynamodb
         to: https://github.com/hummingbird-project/hummingbird-examples/tree/main/todos-dynamodb
+      - title: OracleNIO
+        description: Examples that use Hummingbird with OracleNIO
+        library: https://github.com/lovetodream/oracle-nio
+        icon: i-simple-icons-oracle
+        to: https://github.com/kicsipixel/oracle-nio-examples
   - title: Templating
     description: |
       Example projects demonstrating how to use templating engines with Hummingbird.
