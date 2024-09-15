@@ -11,6 +11,10 @@ const links = computed(() => [{
   label: 'Ecosystem',
   to: '/ecosystem',
   icon: 'i-heroicons-rectangle-group'
+}, {
+  label: 'Examples',
+  to: '/examples',
+  icon: 'i-heroicons-document'
 }])
 </script>
 

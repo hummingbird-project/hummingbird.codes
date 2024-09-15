@@ -18,8 +18,7 @@ hero:
       icon: i-simple-icons-github
       size: xl
       color: gray
-      to: https://github.com/hummingbird-project/hummingbird-examples
-      target: _blank
+      to: /examples
 features:
   title: Create Better Backends with Swift
   description: Hummingbird takes advantage of Swift to make it easy and enjoyable to create robust backends.
