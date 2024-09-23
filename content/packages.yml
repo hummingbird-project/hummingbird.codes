@@ -20,84 +20,100 @@ extensions:
   title: Official Extensions
   description: There are official extensions to cover many of your use cases.
   items:
-    - title: HummingbirdWebSocket
+    - title: WebSocket
+      library: HummingbirdWebSocket
       description: WebSocket upgrade support for the Hummingbird server framework.
       icon: i-heroicons-globe-alt
       to: https://github.com/hummingbird-project/hummingbird-websocket
       class: col-span-4
-    - title: HummingbirdLambda
+    - title: AWS Lambda
+      library: HummingbirdLambda
       description: Run Hummingbird inside an AWS Lambda.
       icon: i-simple-icons-awslambda
       to: https://github.com/hummingbird-project/hummingbird-lambda
       class: col-span-4
-    - title: HummingbirdAuth
+    - title: Auth
+      library: HummingbirdAuth
       description: Authentication framework and extensions for Hummingbird server framework.
       icon: i-heroicons-lock-closed
       to: https://github.com/hummingbird-project/hummingbird-auth
       class: col-span-4
-    - title: OpenAPIHummingbird
+    - title: OpenAPI
+      library: OpenAPIHummingbird
       description: Generate Swift client and server code from an OpenAPI document.
       icon: i-simple-icons-swagger
       to: https://github.com/swift-server/swift-openapi-hummingbird
       class: col-span-4
-    - title: HummingbirdFluent
+    - title: Fluent ORM
+      library: HummingbirdFluent
       description: Hummingbird interface to the Fluent database ORM.
       icon: i-heroicons-circle-stack
       to: https://github.com/hummingbird-project/hummingbird-fluent
       class: col-span-4
-    - title: HummingbirdCompression
+    - title: HTTP Compression
+      library: HummingbirdCompression
       description: Request decompression and response compression for Hummingbird
       icon: i-simple-icons-swagger
       to: https://github.com/hummingbird-project/hummingbird-compression
       class: col-span-4
-    - title: HummingbirdRedis
+    - title: Redis
+      library: HummingbirdRedis
       description: Hummingbird interface to RediStack Swift library.
       icon: i-simple-icons-redis
       to: https://github.com/hummingbird-project/hummingbird-redis
       class: col-span-4
     - title: Mustache
+      library: Swift-Mustache
       description: Package for rendering dynamic content using Mustache templates.
       icon: i-mdi-mustache
       to: https://github.com/hummingbird-project/swift-mustache
       class: col-span-4
-    - title: Jobs
+    - title: Job Queues
+      library: Jobs
       description: Job queue used to persist and offload work to other servers.
       icon: i-fluent-people-queue-24-regular
       to: https://github.com/hummingbird-project/swift-jobs
       class: col-span-4
 databases:
   title: Database Support
-  description: Hummingbird supports a wide range of databases, tightly integrated through SwiftNIO.
   items:
-    - title: PostgresNIO
-      description: Non-blocking, event-driven Swift client for PostgreSQL built on SwiftNIO.
+    - title: PostgreSQL
+      library: PostgresNIO
+      description: Non-blocking, event-driven Swift client for PostgreSQL.
       icon: i-simple-icons-postgresql
       to: https://github.com/vapor/postgres-nio
-    - title: MySQLNIO
-      description: Non-blocking, event-driven Swift client for MySQL built on SwiftNIO.
+    - title: MySQL
+      library: MySQLNIO
+      description: Non-blocking, event-driven Swift client for MySQL.
       icon: i-simple-icons-mysql
       to: https://github.com/vapor/mysql-nio
-    - title: SQLiteNIO
-      description: Non-blocking wrapper for libsqlite3-dev using SwiftNIO.
+    - title: SQLite
+      library: SQLiteNIO
+      description: Non-blocking wrapper for libsqlite3-dev.
       icon: i-simple-icons-sqlite
       to: https://github.com/vapor/sqlite-nio
-    - title: OracleNIO
-      description: Non-blocking, event-driven Swift client for Oracle Databases built on SwiftNIO.
+    - title: Oracle
+      library: OracleNIO
+      description: Non-blocking, event-driven Swift client for Oracle Databases.
       icon: i-simple-icons-oracle
       to: https://github.com/lovetodream/oracle-nio
-    - title: RediStack
-      description: A non-blocking Swift client for Redis built on top of SwiftNIO.
+    - title: Redis
+      library: RediStack
+      description: A non-blocking Swift client for Redis.
       icon: i-simple-icons-redis
       to: https://github.com/swift-server/redistack
-    - title: MongoKitten
-      description: A fast, pure swift MongoDB driver based on SwiftNIO and built for Server Side Swift.
+    - title: MongoDB
+      library: MongoKitten
+      description: A fast, pure swift MongoDB driver built for Server Side Swift.
       icon: i-simple-icons-mongodb
       to: https://github.com/orlandos-nl/MongoKitten
-    - title: Cassandra
+    - title: Apache Cassandra
+      library: Swift-Cassandra-Client
       description: A Swift client for Apache Cassandra.
       icon: i-simple-icons-apachecassandra
       to: https://github.com/apple/swift-cassandra-client
-    - title: Kafka
+    - title: Apache Kafka
+      library: Swift-Kafka-Client
       description: A Swift client for Apache Kafka.
       icon: i-simple-icons-apachekafka
       to: https://github.com/swift-server/swift-kafka-client
@@ -124,27 +140,32 @@ misc:
   title: Other Packages
   description: Other packages that are commonly used with Hummingbird.
   items:
-    - title: JWTKit
-      description: JSON Web Token signing and verification using Swift-Crypto.
+    - title: JWT
+      library: JWTKit
+      description: JSON Web Token signing and verification.
       icon: i-simple-icons-jsonwebtokens
       to: https://github.com/vapor/jwt-kit
       class: col-span-4
-    - title: WebAuthn
-      description: WebAuthn (Passkey) support.
+    - title: WebAuthn (PassKey)
+      library: WebAuthn Swift
+      description: WebAuthn (Passkey) server support.
       icon: i-simple-icons-webauthn
       to: https://github.com/swift-server/webauthn-swift
       class: col-span-4
-    - title: APNSwift
-      description: A non-blocking Swift module for sending remote Apple Push Notification requests to APNS built on AsyncHttpClient.
+    - title: Apple Push Notifications
+      library: APNSwift
+      description: Support for Apple Push Notification.
       icon: i-simple-icons-apple
       to: https://github.com/swift-server-community/APNSwift
       class: col-span-4
-    - title: Soto
-      description: Swift language SDK for Amazon Web Services (AWS)
+    - title: Amazon Web Services
+      library: Soto
+      description: Swift language SDK for Amazon Web Services.
       icon: i-mdi-aws
       to: https://github.com/soto-project/soto
       class: col-start-3 col-span-4
-    - title: MQTTNIO
+    - title: MQTT
+      library: MTTNIO
       description: A SwiftNIO based MQTT v3.1.1 and v5.0 client.
       icon: i-simple-icons-mqtt
       to: https://github.com/swift-server-community/mqtt-nio
