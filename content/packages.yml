@@ -32,7 +32,7 @@ extensions:
       icon: i-simple-icons-awslambda
       to: https://github.com/hummingbird-project/hummingbird-lambda
       class: col-span-4
-    - title: Auth
+    - title: Authentication
       library: HummingbirdAuth
       description: Authentication framework and extensions for Hummingbird server framework.
       icon: i-heroicons-lock-closed
