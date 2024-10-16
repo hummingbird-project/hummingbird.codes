@@ -9,7 +9,7 @@ const links = [{
     to: 'https://github.com/hummingbird-project/hummingbird-examples'
   }, {
     label: 'Discord',
-    to: 'https://discord.gg/7ME3nZ7mP2'
+    to: 'https://discord.gg/4twfgYqdat'
   }]
 }, {
   label: 'Contributing',

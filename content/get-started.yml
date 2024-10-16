@@ -5,7 +5,7 @@ hero:
   description: Swift runs on your platform. We'll set you up in no time!
   links:
     - label: Need Help?
-      to: https://discord.gg/7ME3nZ7mP2
+      to: https://discord.gg/4twfgYqdat
       color: gray
       leadingIcon: i-simple-icons-discord
       size: xl
@@ -88,7 +88,7 @@ cta:
     Join the Hummingbird community on Discord to get help, share your projects, and chat with other developers.
   links:
     - label: Join the Community
-      to: https://discord.gg/7ME3nZ7mP2
+      to: https://discord.gg/4twfgYqdat
       leadingIcon: i-simple-icons-discord
       size: xl
       color: gray
