@@ -28,12 +28,18 @@ categories:
         library: https://github.com/swift-server/webauthn-swift
         icon: i-heroicons-key
         to: https://github.com/hummingbird-project/hummingbird-examples/tree/main/webauthn
-        class: col-span-4 col-start-3
+        class: col-span-4
       - title: Session Cookies
         description: Session Cookie based authorization
         library: https://github.com/hummingbird-project/hummingbird-auth
         icon: i-heroicons-ticket
         to: https://github.com/hummingbird-project/hummingbird-examples/tree/main/sessions
+        class: col-span-4
+      - title: One Time Passwords
+        description: Add One Time Passwords for two factor authentication
+        library: https://github.com/hummingbird-project/hummingbird-auth
+        icon: i-heroicons-qr-code
+        to: https://github.com/hummingbird-project/hummingbird-examples/tree/main/auth-otp
         class: col-span-4
       # TODO: SIWA
       # APNS
@@ -102,31 +108,44 @@ categories:
         description: Demonstrates implementing HTTP2.
         icon: i-heroicons-h2
         to: https://github.com/hummingbird-project/hummingbird-examples/tree/main/http2
+        class: col-span-4
       - title: Jobs
         description: A job queue using the Jobs package and Hummingbird.
         icon: i-heroicons-cog
         to: https://github.com/hummingbird-project/hummingbird-examples/tree/main/jobs
+        class: col-span-4
       - title: Asynchronous Body Processing
         description: Example project demonstrating how to process request bodies asynchronously.
         icon: i-heroicons-arrow-path
         to: https://github.com/hummingbird-project/hummingbird-examples/tree/main/proxy-server
+        class: col-span-4
       - title: File Upload
         description: A demonstration of how to efficiently handle file uploads to disk.
         icon: i-heroicons-arrow-up-on-square
         to: https://github.com/hummingbird-project/hummingbird-examples/tree/main/upload
+        class: col-span-4
       - title: File Upload to S3
         description: A demonstration that shows uploading files to S3 using Hummingbird.
         icon: i-simple-icons-amazonaws
         to: https://github.com/hummingbird-project/hummingbird-examples/tree/main/upload-s3
+        class: col-span-4
       - title: URL Encoded Forms
         description: An example project handling URL encoded form data and rendering dynamic content using Mustache.
         icon: i-heroicons-document-text
         to: https://github.com/hummingbird-project/hummingbird-examples/tree/main/html-form
+        class: col-span-4
       - title: Multipart Form
         description: An example project that handles multipart form data.
         icon: i-heroicons-document
         to: https://github.com/hummingbird-project/hummingbird-examples/tree/main/multipart-form
+        class: col-span-4
       - title: S3 File Provider
         description: An example project using a custom FileProvider to serve files from S3 with FileMiddleware.
         icon: i-simple-icons-amazonaws
         to: https://github.com/hummingbird-project/hummingbird-examples/tree/main/s3-file-provider
+        class: col-span-4
+      - title: Server Sent Events
+        description: An example project that sets up a route that returns server sent events.
+        icon: i-heroicons-arrow-path
+        to: https://github.com/hummingbird-project/hummingbird-examples/tree/main/server-sent-events
+        class: col-span-4
