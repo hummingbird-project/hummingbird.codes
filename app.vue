@@ -13,8 +13,8 @@ useHead({
 })
 
 useSeoMeta({
-  ogImage: '/social-media-card.png',
-  twitterImage: '/twitter-card.png',
+  ogImage: 'https://hummingbird.codes/social-media-card.png',
+  twitterImage: 'https://hummingbird.codes/twitter-card.png',
   twitterCard: 'summary_large_image'
 })
 </script>
