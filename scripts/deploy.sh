@@ -1,4 +1,5 @@
 #!/bin/bash
+USE_BUN=${USE_BUN:-true}
 
 has_command () {
     command -v "$1" > /dev/null
@@ -9,9 +10,16 @@ if ! has_command aws ; then
     exit 1
 fi
 
-if ! has_command bun ; then
-    echo "Bun, the Javascript runtime and toolkit, is required to deploy"
-    exit 1
+if $USE_BUN ; then
+  if ! has_command bun ; then
+      echo "Bun, the Javascript runtime and toolkit, is required to deploy"
+      exit 1
+  fi
+else
+  if ! has_command npm ; then
+      echo "npm is required to deploy"
+      exit 1
+  fi
 fi
 
 SITE_ENV="staging"
@@ -40,11 +48,17 @@ else
   DISTRIBUTION_ID=EYMMXRXBFOIF7
 fi
 
-# install latest modules
-bun install
-
-# build site
-bun run generate
+if $USE_BUN ; then
+  # install latest modules
+  bun install
+  # build site
+  bun run generate
+else
+  # install latest modules
+  npm install
+  # build site
+  npm run generate
+fi
 
 # sync with aws folder
 aws s3 sync .output/public/ "$S3_PATH"
