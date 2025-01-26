@@ -8,6 +8,10 @@ jobs:
   linux:
     runs-on: ubuntu-latest
     steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
     - name: Deploy to Staging
       run: |
         ./scripts/deploy.sh
