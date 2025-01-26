@@ -19,6 +19,6 @@ jobs:
       uses: actions/checkout@v4
       with:
         fetch-depth: 0
-    - name: Deploy to Staging
+    - name: Deploy to production
       run: |
         ./scripts/deploy.sh -p
