@@ -117,7 +117,7 @@ categories:
       - title: Asynchronous Body Processing
         description: Example project demonstrating how to process request bodies asynchronously.
         icon: i-heroicons-arrow-path
-        to: https://github.com/hummingbird-project/hummingbird-examples/tree/main/proxy-server
+        to: https://github.com/hummingbird-project/hummingbird-examples/tree/main/response-body-processing
         class: col-span-4
       - title: File Upload
         description: A demonstration of how to efficiently handle file uploads to disk.
