@@ -24,7 +24,9 @@ export default defineNuxtConfig({
   },
 
   routeRules: {
-    '/': { prerender: true }
+    '/': { prerender: true },
+    '/docs': { redirect: 'https://docs.hummingbird.codes' },
+    '/discord': { redirect: 'https://discord.gg/4twfgYqdat' }
   },
 
   devtools: {
