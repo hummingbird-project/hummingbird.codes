@@ -51,7 +51,7 @@ categories:
         description: Example project demonstrating how to use the Fluent ORM with Hummingbird.
         library: https://github.com/vapor/fluent
         icon: i-heroicons-circle-stack
-        to: https://github.com/hummingbird-project/hummingbird-examples/tree/1.x.x/todos-fluent
+        to: https://github.com/hummingbird-project/hummingbird-examples/tree/main/todos-fluent
       - title: MongoKitten
         description: MongoKitten example, featuring OpenAPI generator and Hummingbird 2.
         library: https://github.com/orlandos-nl/MongoKitten
