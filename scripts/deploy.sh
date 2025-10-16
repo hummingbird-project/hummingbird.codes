@@ -1,5 +1,5 @@
 #!/bin/bash
-USE_BUN=${USE_BUN:-true}
+USE_BUN=${USE_BUN:-false}
 
 has_command () {
     command -v "$1" > /dev/null
