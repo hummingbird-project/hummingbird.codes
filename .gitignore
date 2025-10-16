@@ -9,6 +9,10 @@ dist
 # Node dependencies
 node_modules
 
+# Lock files
+bun.lockb
+pnpm-lock.yaml
+
 # Logs
 logs
 *.log

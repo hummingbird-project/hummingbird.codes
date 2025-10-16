@@ -56,11 +56,10 @@ extensions:
       icon: i-simple-icons-swagger
       to: https://github.com/hummingbird-project/hummingbird-compression
       class: col-span-4
-    - title: Redis
-      library: HummingbirdRedis
-      description: Hummingbird interface to RediStack Swift library.
-      icon: i-simple-icons-redis
-      to: https://github.com/hummingbird-project/hummingbird-redis
+    - title: Valkey
+      library: HummingbirdValkey
+      description: Hummingbird integration with valkey-swift library.
+      to: https://github.com/hummingbird-project/hummingbird-valkey
       class: col-span-4
     - title: Mustache
       library: Swift-Mustache
@@ -97,11 +96,10 @@ databases:
       description: Non-blocking, event-driven Swift client for Oracle Databases.
       icon: i-simple-icons-oracle
       to: https://github.com/lovetodream/oracle-nio
-    - title: Redis
-      library: RediStack
-      description: A non-blocking Swift client for Redis.
-      icon: i-simple-icons-redis
-      to: https://github.com/swift-server/redistack
+    - title: Valkey/Redis
+      library: valkey-swift
+      description: Modern Swift client for Valkey and Redis.
+      to: https://github.com/valkey-io/valkey-swift
     - title: MongoDB
       library: MongoKitten
       description: A fast, pure swift MongoDB driver built for Server Side Swift.
