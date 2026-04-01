@@ -41,11 +41,11 @@ done
 export NUXT_SITE_ENV=$SITE_ENV
 
 if [[ $SITE_ENV == "production" ]]; then
-  S3_PATH=s3://hummingbird.codes/
-  DISTRIBUTION_ID=E1WY5ZRQPDX7NV
+  S3_PATH=s3://hummingbird.codes-997498697912-eu-west-1-an/
+  DISTRIBUTION_ID=E1LQKV1L1I8DNK
 else
-  S3_PATH=s3://staging.hummingbird.codes/
-  DISTRIBUTION_ID=EYMMXRXBFOIF7
+  S3_PATH=s3://staging.hummingbird.codes-997498697912-eu-west-1-an/
+  DISTRIBUTION_ID=E3M1OBGCP6GXXV
 fi
 
 if $USE_BUN ; then
