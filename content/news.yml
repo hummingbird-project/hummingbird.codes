@@ -8,6 +8,12 @@ hero:
     to: /news/hummingbird-2
     icon: i-heroicons-arrow-top-right-on-square-20-solid
 posts:
+  - title: We're now on GitHub Sponsors
+    description: Hummingbird is on GitHub Sponsors. Help us to continue maintaining and improving the framework by sponsoring development.
+    to: /news/github-sponsors
+    date: 6 Apr 2026
+    authors:
+      - Adam
   - title: Hummingbird 2 is out!
     description: Hummingbird 2 has been released. The framework has been completely rebuilt from scratch with Swift concurrency taking a central role.
     to: /news/hummingbird-2

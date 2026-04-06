@@ -29,6 +29,7 @@
   },
   "devDependencies": {
     "@nuxt/eslint": "^1.11.0",
+    "baseline-browser-mapping": "^2.10.15",
     "eslint": "^9.37.0",
     "vue-tsc": "^2.2.12"
   }
