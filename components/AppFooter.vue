@@ -8,14 +8,20 @@ const links = [{
     label: 'Examples',
     to: 'https://github.com/hummingbird-project/hummingbird-examples'
   }, {
-    label: 'Discord',
-    to: 'https://discord.gg/4twfgYqdat'
+    label: 'Mastodon',
+    to: 'https://mastodon.social/@hummingbird_project'
+  }, {
+    label: 'Bluesky',
+    to: 'https://bsky.app/profile/hummingbird.codes'
   }]
 }, {
   label: 'Contributing',
   children: [{
     label: 'GitHub',
     to: 'https://github.com/hummingbird-project/hummingbird'
+  }, {
+    label: 'Discord',
+    to: 'https://discord.gg/4twfgYqdat'
   }]
 }]
 </script>

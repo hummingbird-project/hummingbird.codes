@@ -12,6 +12,22 @@ export default defineNuxtConfig({
     '@nuxt/icon'
   ],
 
+  app: {
+    head: {
+      link: [
+        {
+          rel: 'me',
+          href: 'https://mastodon.social/@hummingbird_project'
+        }
+      ],
+      meta: [
+        {
+          name: 'fediverse:creator',
+          content: '@hummingbird_project@mastodon.social'
+        }
+      ]
+    }
+  },
   site: {
     url: 'https://hummingbird.codes',
     name: 'Hummingbird Web Framework'
