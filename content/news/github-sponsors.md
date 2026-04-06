@@ -10,4 +10,4 @@ If Hummingbird has been useful to you or your team, sponsoring is one of the mos
 
 Every contribution, big or small, will help. Thank you for your support. ❤️
 
-<iframe src="https://github.com/sponsors/hummingbird-project/card" width="600" height="80" style="display:block;border:0;margin:auto" title="Sponsor hummingbird-project"></iframe>
+<iframe src="https://github.com/sponsors/hummingbird-project/button" title="Sponsor hummingbird-project" height="32" width="114" style="border: 0; border-radius: 6px;"></iframe>
