@@ -1,0 +1,129 @@
+title: Learn - Hummingbird
+description: Tutorials, articles, and talks about Hummingbird from the Swift community.
+
+hero:
+  title: Learn Hummingbird
+  description: |
+    Tutorials, articles, and talks from the Swift community. Whether you prefer reading or watching, there's something here to get you started or go deeper.
+
+swiftonserver:
+  title: Swift on Server
+  description: In-depth articles covering Hummingbird features and integrations.
+  items:
+    - title: What's new in Hummingbird 2?
+      description: An overview of the major changes and new features in Hummingbird 2.
+      icon: i-heroicons-document-text
+      to: https://swiftonserver.com/whats-new-in-hummingbird-2/
+      class: col-span-4
+      image: ''
+    - title: Getting Started with Hummingbird
+      description: A step-by-step guide to building your first Hummingbird application.
+      icon: i-heroicons-document-text
+      to: https://swiftonserver.com/getting-started-with-hummingbird/
+      class: col-span-4
+    - title: Using Hummingbird's Request Contexts
+      description: How to use RequestContext for type-safe, structured request data.
+      icon: i-heroicons-document-text
+      to: https://swiftonserver.com/using-hummingbird-request-context/
+      class: col-span-4
+    - title: Using WebSockets in Hummingbird
+      description: Add real-time bidirectional communication to your Hummingbird app.
+      icon: i-heroicons-document-text
+      to: https://swiftonserver.com/websockets-tutorial-using-swift-and-hummingbird/
+      class: col-span-4
+    - title: Using OpenAPI Generator with Hummingbird
+      description: Generate Swift server stubs from an OpenAPI document.
+      icon: i-heroicons-document-text
+      to: https://swiftonserver.com/using-openapi-with-hummingbird/
+      class: col-span-4
+    - title: Hummingbird and CORS
+      description: Configure Cross-Origin Resource Sharing in Hummingbird.
+      icon: i-heroicons-document-text
+      to: https://swiftonserver.com/hummingbird-and-cors/
+      class: col-span-4
+    - title: How to Build a Proxy Server with Hummingbird
+      description: Build a reverse proxy using Hummingbird's middleware system.
+      icon: i-heroicons-document-text
+      to: https://swiftonserver.com/how-to-build-a-proxy-server-with-hummingbird/
+      class: col-span-4
+    - title: Realtime MongoDB Updates with ChangeStreams and WebSockets
+      description: Stream live database changes to clients using MongoDB and Hummingbird.
+      icon: i-heroicons-document-text
+      to: https://swiftonserver.com/realtime-mongodb-updates-with-changestreams-and-websockets/
+      class: col-span-4
+
+whynotestflight:
+  title: WhyNoTestflight
+  description: A 12-part beginner-friendly series covering Hummingbird from static files to advanced RequestContext patterns.
+  items:
+    - title: How can I have Hummingbird serve static files?
+      description: Part 1 - Serving static assets with Hummingbird.
+      icon: i-heroicons-document-text
+      to: https://whynotestflight.com/excuses/how-can-i-have-hummingbird-serve-static-files/
+      class: col-span-4
+    - title: What kinda routes can I use with Hummingbird?
+      description: Part 2 - Route configuration and path parameters.
+      icon: i-heroicons-document-text
+      to: https://whynotestflight.com/excuses/what-kinda-routes-can-i-use-with-hummingbird/
+      class: col-span-4
+    - title: How do I test Hummingbird routes with Swift Testing?
+      description: Part 3 - Writing tests for your Hummingbird routes.
+      icon: i-heroicons-document-text
+      to: https://whynotestflight.com/excuses/how-do-i-test-the-hummingbird-routes-with-swift-testing/
+      class: col-span-4
+    - title: How do I get Hummingbird to serve HTML dynamically?
+      description: Part 4 - Dynamic HTML responses from route handlers.
+      icon: i-heroicons-document-text
+      to: https://whynotestflight.com/excuses/how-do-i-get-hummingbird-to-serve-html-dynamically/
+      class: col-span-4
+    - title: How do I get Hummingbird to use Mustache templates?
+      description: Part 5 - Rendering with Swift-Mustache.
+      icon: i-heroicons-document-text
+      to: https://whynotestflight.com/excuses/how-do-i-get-hummingbird-to-use-mustache-templates-instead/
+      class: col-span-4
+    - title: How do I use Hummingbird to make a basic CRUD API?
+      description: Part 6 - Building create, read, update, delete endpoints.
+      icon: i-heroicons-document-text
+      to: https://whynotestflight.com/excuses/how-do-i-use-hummingbird-to-make-a-basic-crud-api/
+      class: col-span-4
+    - title: How do I get Hummingbird to work with the OpenAPI plugins?
+      description: Part 7 - Integrating OpenAPI generator with Hummingbird.
+      icon: i-heroicons-document-text
+      to: https://whynotestflight.com/excuses/how-do-i-get-hummingbird-to-work-with-the-openapi-plugins/
+      class: col-span-4
+    - title: How do I make an OpenAPI spec for Hummingbird?
+      description: Part 8 - Writing and using OpenAPI specs end-to-end.
+      icon: i-heroicons-document-text
+      to: https://whynotestflight.com/excuses/how-do-i-make-a-openapi-clownapi-for-hummingbird/
+      class: col-span-4
+    - title: How exactly does middleware work in Hummingbird?
+      description: Part 9 - Understanding and writing middleware.
+      icon: i-heroicons-document-text
+      to: https://whynotestflight.com/excuses/so-how-exactly-does-middleware-come-into-hummingbird/
+      class: col-span-4
+    - title: How about catching errors with Hummingbird middleware?
+      description: Part 10 - Error handling middleware patterns.
+      icon: i-heroicons-document-text
+      to: https://whynotestflight.com/excuses/how-about-catching-errors-with-hummingbird-middleware/
+      class: col-span-4
+    - title: What even is a Hummingbird RequestContext?
+      description: Part 11 - Deep dive into RequestContext.
+      icon: i-heroicons-document-text
+      to: https://whynotestflight.com/excuses/so-what-even-is-a-hummingbird-requestcontext/
+      class: col-span-4
+    - title: Why would I want a Hummingbird ChildRequestContext?
+      description: Part 12 - Advanced context composition with ChildRequestContext.
+      icon: i-heroicons-document-text
+      to: https://whynotestflight.com/excuses/why-would-i-want-a-hummingbird-childrequestcontext/
+      class: col-span-4
+
+talks:
+  title: Talks & Videos
+  description: Conference talks and recorded sessions about Hummingbird.
+  items:
+    - title: Introduction to Hummingbird 2
+      description: by Joannis Orlandos - a conference talk introducing Hummingbird 2's architecture and design philosophy.
+      icon: i-heroicons-play-circle
+      to: https://www.youtube.com/watch?v=FHO_BfidQlQ
+      class: col-start-4 col-span-6
+      embedUrl: https://www.youtube.com/embed/FHO_BfidQlQ

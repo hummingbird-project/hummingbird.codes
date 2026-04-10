@@ -1,8 +1,12 @@
 <script setup lang="ts">
 const links = computed(() => [{
   label: 'Features',
-  to: '/',
+  to: '/features',
   icon: 'i-heroicons-cube-transparent'
+}, {
+  label: 'Learn',
+  to: '/learn',
+  icon: 'i-heroicons-academic-cap'
 }, {
   label: 'News',
   to: '/news',
