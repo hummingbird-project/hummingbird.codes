@@ -6,14 +6,14 @@ description: As AI assisted coding becomes more prevalent in open source, we hav
 
 As AI assisted coding is becoming more prevalent in open source projects, we have established a policy about AI usage in contributions to Hummingbird and its related projects.
 
-We are happy to accept contributions that have been generated using some form of AI assistance with the following provisos:
+We are happy to accept contributions that have been generated using some form of AI assistance. However, because AI generated PRs take up a lot of maintainer's time to review - we've added some guidelines, rules and clarifications around this.
 
-- Contributors should have fully reviewed any generated code, understand it, be able to answer questions about it and be able to explain the rationale behind decisions made. The contributor is always the author and is fully accountable for their contributions.
-- Contributors should have the right to license their submissions to the project as detailed in [CONTRIBUTING.md](https://github.com/hummingbird-project/hummingbird/blob/main/CONTRIBUTING.md).
-- It should be made clear if a considerable amount of a pull request has been generated — for instance by adding "Assisted-by:" to commit messages.
-- The quality bar for pull requests is the same regardless of whether they have been generated with AI or not. We expect PRs to compile on all supported platforms, with tests added where applicable.
-- Any non-code submission, e.g. issues, PR descriptions or security reports, should not be generated using AI, with the exception of fixing grammar and spelling.
-- There should always be a human in the loop. Agents cannot be used to respond to PR comments, feedback or commits. All responses have to be reviewed by a human before submission.
-- AI cannot be used to implement good first issues. These are designed for someone to learn the codebase, and using an AI assistant defeats the purpose of them.
+Most importantly: We expect contributors to have fully reviewed their generated code, and are able to answer any questions related to the PR and decisions made. If you don't understand the generated code, please do not submit it - file an issue instead. This ensures your PR is not a proxy for us interfacing with an LLM.
 
-The full policy is available in [AI_POLICY.md](https://github.com/hummingbird-project/hummingbird/blob/main/AI_POLICY.md) in the Hummingbird repository. Much of this policy was inspired by the [LLVM Project AI Tool Use Policy](https://llvm.org/docs/AIToolPolicy.html).
+Hummingbird sets a high quality bar, which is essential to the project's goals and succeess. The introduction of AI does not lower this bar - we still expect the same code standards and requirements to apply. All supported platforms remain supported, and tests are added where applicable.
+
+Tests in particular should be much easier to write with AI. However, as AI has the tendency to force things green, please don't introduce redundant of "fake" tests that are effectively equivalent to `XCTAssert(true)`. It's wise to spend the time discussing with your LLM what the goal of the feature is, and find out in ways it can break. Breaking can be a mistake in your current PR, but could also arise when someone modifies your code.
+
+Any non-code submission, e.g. issues, PR descriptions or security reports, should not be generated using AI, with the exception of fixing grammar and spelling. There should always be a human in the loop. Agents cannot be used to respond to PR comments, feedback or commits. All responses have to be reviewed by a human before submission.
+
+The full, exact and up-to-date policy is available in [AI_POLICY.md](https://github.com/hummingbird-project/hummingbird/blob/main/AI_POLICY.md) in the Hummingbird repository. Much of this policy was inspired by the [LLVM Project AI Tool Use Policy](https://llvm.org/docs/AIToolPolicy.html).
