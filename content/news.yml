@@ -8,6 +8,12 @@ hero:
     to: /news/hummingbird-2
     icon: i-heroicons-arrow-top-right-on-square-20-solid
 posts:
+  - title: "Devlog: Faster HTTP responses in Hummingbird 2.22"
+    description: A single-write fast path for ByteBuffer response bodies cut typical HTTP route throughput from 122K to over 180K req/sec.
+    to: /news/devlog-response-body-fast-path
+    date: 13 Apr 2026
+    authors:
+      - Joannis
   - title: We're now on GitHub Sponsors
     description: Hummingbird is on GitHub Sponsors. Help us to continue maintaining and improving the framework by sponsoring development.
     to: /news/github-sponsors
