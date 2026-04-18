@@ -1,38 +1,47 @@
-title: Learn - Hummingbird
+title: Learn
 description: Tutorials, articles, and talks about Hummingbird from the Swift community.
 
 hero:
-  title: Learn Hummingbird
+  title: Learn
   description: |
     Tutorials, articles, and talks from the Swift community. Whether you prefer reading or watching, there's something here to get you started or go deeper.
 
-swiftonserver:
-  title: Swift on Server
-  description: In-depth articles covering Hummingbird features and integrations.
+blogs:
+  title: Articles & Blogs
+  description: Community-written articles and tutorials covering Hummingbird in depth.
   items:
     - title: Swift on Server
-      description: A collection of in-depth articles on Hummingbird — covering WebSockets, OpenAPI, Fluent, CORS, proxies, MongoDB ChangeStreams, and more.
+      description: In-depth articles on Hummingbird — WebSockets, OpenAPI, Fluent, CORS, proxies, MongoDB ChangeStreams, and more.
       icon: i-heroicons-document-text
-      to: https://swiftonserver.com
-      class: col-start-4 col-span-6
-
-whynotestflight:
-  title: WhyNoTestflight
-  description: A 12-part beginner-friendly series covering Hummingbird from static files to advanced RequestContext patterns.
-  items:
-    - title: WhyNoTestflight — Hummingbird Series
-      description: A 12-part series taking you from serving static files all the way to routes, Mustache templates, OpenAPI, middleware, and advanced RequestContext patterns.
+      to: https://swiftonserver.com/tags/hummingbird/
+    - title: kicsipixel
+      description: Hands-on Hummingbird articles covering practical use cases and integrations, published on Medium.
+      icon: i-simple-icons-medium
+      to: https://medium.com/@kicsipixel/
+    - title: WhyNoTestflight
+      description: A 12-part series from static files to routes, Mustache templates, OpenAPI, middleware, and RequestContext patterns.
       icon: i-heroicons-document-text
       to: https://whynotestflight.com/excuses/how-can-i-have-hummingbird-serve-static-files/
-      class: col-start-4 col-span-6
 
 talks:
   title: Talks & Videos
   description: Conference talks and recorded sessions about Hummingbird.
   items:
     - title: Introduction to Hummingbird 2
-      description: by Joannis Orlandos - a conference talk introducing Hummingbird 2's architecture and design philosophy.
-      icon: i-heroicons-play-circle
+      description: by Joannis Orlandos — introducing Hummingbird 2's architecture and design philosophy.
       to: https://www.youtube.com/watch?v=FHO_BfidQlQ
-      class: col-start-4 col-span-6
+      class: col-span-6
       embedUrl: https://www.youtube.com/embed/FHO_BfidQlQ
+    - title: Build Your First Swift Server with Hummingbird
+      description: A beginner-friendly walkthrough of building your first Hummingbird server.
+      to: https://www.youtube.com/watch?v=t9MUj4LfsyU
+      class: col-span-6
+      embedUrl: https://www.youtube.com/embed/t9MUj4LfsyU
+    - title: Swift Community Meetups
+      description: Recordings from Swift community meetups, including Hummingbird talks and demos.
+      to: https://www.youtube.com/@SwiftCommunityMeetups
+      class: col-span-6
+    - title: SwiftServerConf
+      description: Conference talks from the Server-Side Swift conference.
+      to: https://www.youtube.com/@swiftserverconf
+      class: col-span-6

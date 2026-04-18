@@ -59,19 +59,5 @@ useSeoMeta({
         />
       </UPageGrid>
     </ULandingSection>
-
-    <ULandingSection
-      :headline="page.platform.headline"
-      :title="page.platform.title"
-      :description="page.platform.description"
-    >
-      <UPageGrid>
-        <ULandingCard
-          v-for="(item, index) in page.platform.items"
-          :key="index"
-          v-bind="item"
-        />
-      </UPageGrid>
-    </ULandingSection>
   </div>
 </template>

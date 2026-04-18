@@ -1,20 +1,20 @@
 <script setup lang="ts">
 const links = computed(() => [{
-  label: 'Features',
-  to: '/features',
-  icon: 'i-heroicons-cube-transparent'
-}, {
-  label: 'Learn',
-  to: '/learn',
-  icon: 'i-heroicons-academic-cap'
-}, {
   label: 'News',
   to: '/news',
   icon: 'i-heroicons-light-bulb'
 }, {
+  label: 'Features',
+  to: '/features',
+  icon: 'i-heroicons-cube-transparent'
+}, {
   label: 'Ecosystem',
   to: '/ecosystem',
   icon: 'i-heroicons-rectangle-group'
+}, {
+  label: 'Learn',
+  to: '/learn',
+  icon: 'i-heroicons-academic-cap'
 }, {
   label: 'Examples',
   to: '/examples',

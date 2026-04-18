@@ -10,7 +10,7 @@ concurrency:
   headline: Structured Concurrency
   title: Your server behaves correctly, automatically
   description: |
-    Hummingbird embraces Swift's structured concurrency from the ground up - not retrofitted. Task cancellation, graceful shutdown, task locals, and executor control all work the way Swift intended.
+    Hummingbird embraces Swift's structured concurrency from the ground up — not retrofitted on top of callbacks or promises. Every request runs in a structured task tree, so cancellation and resource cleanup all happen correctly by design.
   items:
     - title: Task Cancellation
       description: |
@@ -20,14 +20,6 @@ concurrency:
       description: |
         On restart or maintenance, Hummingbird finishes all in-progress requests before going offline. No dropped connections, no API errors for your users.
       icon: i-heroicons-arrow-path
-    - title: Task Local Values
-      description: |
-        @TaskLocal values propagate through your entire request chain with zero boilerplate. Use swift-log metadata or swift-dependencies out of the box with no extra wiring.
-      icon: i-heroicons-tag
-    - title: Task Executors
-      description: |
-        Specify which thread your handler runs on, or let Hummingbird assign one per request. More efficient by default - full control when you need it.
-      icon: i-heroicons-cpu-chip
 
 performance:
   headline: Performance
@@ -66,17 +58,3 @@ dx:
       description: |
         Swift's expressive syntax makes route handlers, middleware, and response types clean and readable.
       icon: i-heroicons-pencil-square
-
-platform:
-  headline: Platform
-  title: Where you need to run
-  description: |
-    Hummingbird runs on the platforms you deploy to today, with Windows support on the way.
-  items:
-    - title: Linux & macOS
-      description: Production-ready today on Linux and macOS.
-      icon: i-simple-icons-linux
-    - title: Windows (Coming Soon)
-      description: |
-        Hummingbird is already largely compatible with Windows, pending a PR in SwiftNIO.
-      icon: i-simple-icons-windows

@@ -1,6 +1,8 @@
 <script setup lang="ts">
 const { data: page } = await useAsyncData('learn', () => queryContent('/learn').findOne())
 
+const favicon = (url: string) => `https://icons.duckduckgo.com/ip3/${new URL(url).hostname}.ico`
+
 useSeoMeta({
   title: page.value.title,
   ogTitle: page.value.title,
@@ -17,71 +19,27 @@ useSeoMeta({
     />
 
     <ULandingSection
-      :title="page.swiftonserver.title"
-      :description="page.swiftonserver.description"
+      :title="page.blogs.title"
+      :description="page.blogs.description"
     >
-      <ULandingGrid>
-        <NuxtLink
-          v-for="(item, index) in page.swiftonserver.items"
+      <UPageGrid>
+        <ULandingCard
+          v-for="(item, index) in page.blogs.items"
           :key="index"
+          :title="item.title"
+          :description="item.description"
           :to="item.to"
-          :class="item.class || 'col-span-4'"
           target="_blank"
-          class="group rounded-xl ring-1 ring-gray-200 dark:ring-gray-800 bg-white dark:bg-gray-900 shadow overflow-hidden flex flex-col transition-all hover:ring-primary-500 hover:shadow-md"
         >
-          <div class="relative pb-[56.25%] overflow-hidden bg-gray-100 dark:bg-gray-800">
-            <NuxtImg
-              v-if="item.image"
-              :src="item.image"
+          <template #icon>
+            <img
+              :src="favicon(item.to)"
               :alt="item.title"
-              class="absolute inset-0 w-full h-full object-cover"
+              class="w-8 h-8 rounded"
             />
-            <UIcon
-              v-else
-              name="i-heroicons-document-text"
-              class="absolute inset-0 m-auto w-10 h-10 text-gray-400"
-            />
-          </div>
-          <div class="p-4 flex flex-col gap-1 flex-1">
-            <p class="font-bold text-gray-900 dark:text-white text-sm leading-snug">{{ item.title }}</p>
-            <p class="text-gray-500 dark:text-gray-400 text-xs mt-1">{{ item.description }}</p>
-          </div>
-        </NuxtLink>
-      </ULandingGrid>
-    </ULandingSection>
-
-    <ULandingSection
-      :title="page.whynotestflight.title"
-      :description="page.whynotestflight.description"
-    >
-      <ULandingGrid>
-        <NuxtLink
-          v-for="(item, index) in page.whynotestflight.items"
-          :key="index"
-          :to="item.to"
-          :class="item.class || 'col-span-4'"
-          target="_blank"
-          class="group rounded-xl ring-1 ring-gray-200 dark:ring-gray-800 bg-white dark:bg-gray-900 shadow overflow-hidden flex flex-col transition-all hover:ring-primary-500 hover:shadow-md"
-        >
-          <div class="relative pb-[56.25%] overflow-hidden bg-gray-100 dark:bg-gray-800">
-            <NuxtImg
-              v-if="item.image"
-              :src="item.image"
-              :alt="item.title"
-              class="absolute inset-0 w-full h-full object-cover"
-            />
-            <UIcon
-              v-else
-              name="i-heroicons-document-text"
-              class="absolute inset-0 m-auto w-10 h-10 text-gray-400"
-            />
-          </div>
-          <div class="p-4 flex flex-col gap-1 flex-1">
-            <p class="font-bold text-gray-900 dark:text-white text-sm leading-snug">{{ item.title }}</p>
-            <p class="text-gray-500 dark:text-gray-400 text-xs mt-1">{{ item.description }}</p>
-          </div>
-        </NuxtLink>
-      </ULandingGrid>
+          </template>
+        </ULandingCard>
+      </UPageGrid>
     </ULandingSection>
 
     <ULandingSection
@@ -110,12 +68,20 @@ useSeoMeta({
           </div>
           <ULandingCard
             v-else
-            :icon="item.icon"
+            class="h-full"
             :title="item.title"
             :description="item.description"
             :to="item.to"
             target="_blank"
-          />
+          >
+            <template #icon>
+              <img
+                :src="favicon(item.to)"
+                :alt="item.title"
+                class="w-8 h-8 rounded"
+              />
+            </template>
+          </ULandingCard>
         </div>
       </ULandingGrid>
     </ULandingSection>
