@@ -11,7 +11,11 @@ posts:
   - title: "Devlog: Faster HTTP responses in Hummingbird 2.22"
     description: A single-write fast path for ByteBuffer response bodies cut typical HTTP route throughput from 122K to over 180K req/sec.
     to: /news/devlog-response-body-fast-path
-    date: 13 Apr 2026
+    date: 20 Apr 2026
+  - title: Our AI Policy
+    description: As AI assisted coding becomes more prevalent in open source, we have established a policy for AI usage in contributions to Hummingbird.
+    to: /news/ai-policy
+    date: 14 Apr 2026
     authors:
       - Joannis
   - title: We're now on GitHub Sponsors
