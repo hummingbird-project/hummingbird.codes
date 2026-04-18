@@ -1,5 +1,5 @@
 <script setup lang="ts">
-// import { Bar } from 'vue-chartjs'
+import { Bar } from 'vue-chartjs'
 import BackgroundIcons from '~/components/BackgroundIcons.vue'
 
 const { data: page } = await useAsyncData('index', () => queryContent('/').findOne())
@@ -13,53 +13,104 @@ useSeoMeta({
   ogDescription: page.value.description
 })
 
-// const performanceChartData = ref({
-//   labels: ['Laravel', 'Expess', 'Vapor', 'Hummingbird', 'Go', 'HB Core'],
-//   datasets: [
-//     {
-//       label: 'Request per second',
-//       data: [12990, 113117, 115300, 643202, 681653, 708562],
-//       backgroundColor: [
-//         'rgba(249, 50, 44, 0.4)',
-//         'rgba(51, 153, 51, 0.4)',
-//         'rgba(223, 62, 251, 0.4)',
-//         'rgba(255, 165, 0, 0.8)',
-//         'rgba(0, 128, 128, 0.4)',
-//         'rgba(255, 165, 0, 0.8)'
-//       ],
-//       borderRadius: 4
-//     }
-//   ]
-// })
-// const chartOptions = ref({
-//   responsive: true,
-//   maintainAspectRatio: false,
-//   plugins: {
-//     tooltip: {
-//       enabled: false
-//     },
-//     legend: {
-//       display: false
-//     }
-//   },
-//   scales: {
-//     y: {
-//       display: false
-//     },
-//     x: {
-//       grid: {
-//         display: false
-//       },
-//       // Don't show the x-axis labels
-//       ticks: {
-//         font: {
-//           size: 9,
-//           weight: 'bold'
-//         }
-//       }
-//     }
-//   }
-// })
+const chartLabels = ['NodeJS', 'Spring Boot', 'Hummingbird']
+const chartColors = {
+  bg:     ['rgba(34,197,94,0.5)', 'rgba(59,130,246,0.5)', 'rgba(251,146,60,0.85)'],
+  border: ['rgba(34,197,94,0.8)', 'rgba(59,130,246,0.8)', 'rgba(251,146,60,1)'],
+}
+
+const performanceChartData = ref({
+  labels: chartLabels,
+  datasets: [{
+    label: 'Requests per second',
+    data: [64700, 179141, 179896],
+    backgroundColor: chartColors.bg,
+    borderColor: chartColors.border,
+    borderWidth: 1,
+    borderRadius: 6,
+  }]
+})
+
+const memoryChartData = ref({
+  labels: chartLabels,
+  datasets: [{
+    label: 'Memory (MB)',
+    data: [106.4, 636.5, 20.0],
+    backgroundColor: chartColors.bg,
+    borderColor: chartColors.border,
+    borderWidth: 1,
+    borderRadius: 6,
+  }]
+})
+
+function makeLabelsPlugin(id: string, fmt: (v: number) => string) {
+  return {
+    id,
+    afterDatasetsDraw(chart: any) {
+      const { ctx, data } = chart
+      chart.getDatasetMeta(0).data.forEach((bar: any, index: number) => {
+        const value = data.datasets[0].data[index] as number
+        const text = fmt(value)
+        ctx.save()
+        ctx.font = 'bold 12px DM Sans, sans-serif'
+        ctx.textAlign = 'center'
+        ctx.textBaseline = 'middle'
+        const w = ctx.measureText(text).width + 10
+        const h = 18
+        const x = bar.x - w / 2
+        const y = bar.y - h - 4
+        ctx.fillStyle = 'rgba(0, 0, 0, 0.55)'
+        ctx.fillRect(x, y, w, h)
+        ctx.fillStyle = 'rgba(255, 255, 255, 0.95)'
+        ctx.fillText(text, bar.x, y + h / 2)
+        ctx.restore()
+      })
+    }
+  }
+}
+
+const rpsLabelsPlugin  = makeLabelsPlugin('rpsLabels',  v => v >= 1000 ? `${Math.round(v / 1000)}k` : String(v))
+const memLabelsPlugin  = makeLabelsPlugin('memLabels',  v => `${v}MB`)
+
+const baseChartOptions = {
+  responsive: true,
+  maintainAspectRatio: false,
+  layout: { padding: { top: 28 } },
+  plugins: {
+    legend: { display: false }
+  },
+  scales: {
+    y: { display: false, beginAtZero: true },
+    x: {
+      grid: { display: false },
+      border: { display: false },
+      ticks: {
+        font: { size: 13, weight: 'bold' },
+        color: 'rgba(255, 255, 255, 0.7)'
+      }
+    }
+  }
+}
+
+const chartOptions = ref({
+  ...baseChartOptions,
+  scales: {
+    ...baseChartOptions.scales,
+    y: { display: false, type: 'logarithmic' },
+  },
+  plugins: {
+    ...baseChartOptions.plugins,
+    tooltip: { callbacks: { label: (ctx: any) => ` ${ctx.parsed.y.toLocaleString()} req/s` } }
+  }
+})
+
+const memoryChartOptions = ref({
+  ...baseChartOptions,
+  plugins: {
+    ...baseChartOptions.plugins,
+    tooltip: { callbacks: { label: (ctx: any) => ` ${ctx.parsed.y} MB` } }
+  }
+})
 </script>
 
 <template>
@@ -151,8 +202,8 @@ useSeoMeta({
       </ULandingHero>
     </ULandingSection>
 
-    <!-- <ULandingSection
-      class="md:py-0 sm:py-0"
+    <ULandingSection
+      class="md:py-0 sm:py-0 overflow-x-hidden"
     >
       <ULandingHero
         :title="page.performance.title"
@@ -160,14 +211,22 @@ useSeoMeta({
         :links="page.performance.links"
         align="right"
       >
-        <div class="relative sm-mx-auto hero-chart">
-          <Bar
-            :data="performanceChartData"
-            :options="chartOptions"
-          />
+        <div class="charts-grid">
+          <div>
+            <p class="chart-label">Requests / sec ↑</p>
+            <div class="hero-chart">
+              <Bar :data="performanceChartData" :options="chartOptions" :plugins="[rpsLabelsPlugin]" />
+            </div>
+          </div>
+          <div>
+            <p class="chart-label">Memory usage ↓</p>
+            <div class="hero-chart">
+              <Bar :data="memoryChartData" :options="memoryChartOptions" :plugins="[memLabelsPlugin]" />
+            </div>
+          </div>
         </div>
       </ULandingHero>
-    </ULandingSection> -->
+    </ULandingSection>
 
     <ULandingSection>
       <ULandingCTA
@@ -213,7 +272,7 @@ useSeoMeta({
 }
 .line-numbered-code {
   max-width: calc(min(90vw, 40em, 100%));
-  overflow: none;
+  overflow: hidden;
   white-space: pre-wrap;
   margin: 0 auto;
 }
@@ -223,9 +282,33 @@ useSeoMeta({
   counter-reset: lines;
 }
 
+.charts-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  width: min(100%, 80vw);
+  overflow: hidden;
+}
+
+@media (max-width: 640px) {
+  .charts-grid {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+}
+
+.chart-label {
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 700;
+  opacity: 0.5;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
 .hero-chart {
-  max-width: calc(min(100%, 80vw));
-  margin: inherit auto;
+  height: 220px;
 }
 
 .line-numbered-code >>> pre code {

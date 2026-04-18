@@ -57,8 +57,7 @@ ecosystem:
 performance:
   title: Excellent Performance
   description: |
-    Hummingbird uses a modern, high-performance web server that can handle tens of thousands of requests per second.
-    All of this while keeping your memory footprint extremely low.
+    Hummingbird matches Java Spring Boot's throughput while using 30× less memory and a fraction of the resources.
 cta:
   title: Join the Hummingbird Community
   description: |

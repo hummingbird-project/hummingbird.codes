@@ -9,6 +9,9 @@ useHead({
   ],
   htmlAttrs: {
     lang: 'en'
+  },
+  bodyAttrs: {
+    style: 'overflow-x: hidden'
   }
 })
 
