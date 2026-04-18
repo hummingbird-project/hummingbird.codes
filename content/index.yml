@@ -57,8 +57,7 @@ ecosystem:
 performance:
   title: Excellent Performance
   description: |
-    Hummingbird matches Java Spring Boot's throughput while using 30× less memory.
-    Built on SwiftNIO for non-blocking I/O with a minimal footprint.
+    Hummingbird matches Java Spring Boot's throughput while using 30× less memory and a fraction of the resources.
 cta:
   title: Join the Hummingbird Community
   description: |

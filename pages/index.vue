@@ -50,12 +50,19 @@ function makeLabelsPlugin(id: string, fmt: (v: number) => string) {
       const { ctx, data } = chart
       chart.getDatasetMeta(0).data.forEach((bar: any, index: number) => {
         const value = data.datasets[0].data[index] as number
+        const text = fmt(value)
         ctx.save()
         ctx.font = 'bold 12px DM Sans, sans-serif'
-        ctx.fillStyle = 'rgba(255, 255, 255, 0.85)'
         ctx.textAlign = 'center'
-        ctx.textBaseline = 'bottom'
-        ctx.fillText(fmt(value), bar.x, bar.y - 6)
+        ctx.textBaseline = 'middle'
+        const w = ctx.measureText(text).width + 10
+        const h = 18
+        const x = bar.x - w / 2
+        const y = bar.y - h - 4
+        ctx.fillStyle = 'rgba(0, 0, 0, 0.55)'
+        ctx.fillRect(x, y, w, h)
+        ctx.fillStyle = 'rgba(255, 255, 255, 0.95)'
+        ctx.fillText(text, bar.x, y + h / 2)
         ctx.restore()
       })
     }
@@ -196,7 +203,7 @@ const memoryChartOptions = ref({
     </ULandingSection>
 
     <ULandingSection
-      class="md:py-0 sm:py-0"
+      class="md:py-0 sm:py-0 overflow-x-hidden"
     >
       <ULandingHero
         :title="page.performance.title"
@@ -265,7 +272,7 @@ const memoryChartOptions = ref({
 }
 .line-numbered-code {
   max-width: calc(min(90vw, 40em, 100%));
-  overflow: none;
+  overflow: hidden;
   white-space: pre-wrap;
   margin: 0 auto;
 }
@@ -279,7 +286,15 @@ const memoryChartOptions = ref({
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
-  max-width: calc(min(100%, 80vw));
+  width: min(100%, 80vw);
+  overflow: hidden;
+}
+
+@media (max-width: 640px) {
+  .charts-grid {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
 }
 
 .chart-label {
