@@ -14,7 +14,7 @@ On top of the basic queue we have added features such as retry failed jobs, paus
 
 ## Durable
 
-We call swift-jobs durable, because it doesn't lose jobs if they fail, or servers crash. If you have a job that triggers a payment you cannot afford for that job to be missed or run twice. Jobs that continue to fail after their defined retry attemtps are stored separately. For instance if a service a job uses is offline the failed jobs will be stored and can be re-queued manually when the service is back online. 
+We call swift-jobs durable, because it doesn't lose jobs if they fail, or servers crash. If you have a job that triggers a payment you cannot afford for that job to be missed or run twice. Jobs that fail will retry automatically but if a job continues to fail after their maximum retry attempts, they are stored separately for later execution. For instance if a service a job uses is offline the failed jobs will be stored and can be re-queued manually when the service is back online. 
 
 Another situation where jobs can be lost is if a server running jobs crashes. Any jobs currently being processed will be orphaned and never completed. Swift-jobs provides a regularly scheduled job that will recognise jobs left in the processing state whose server is no longer running and re-queue them so they can be processed fully.
 
