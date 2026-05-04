@@ -8,12 +8,6 @@ hero:
     to: /news/hummingbird-2
     icon: i-heroicons-arrow-top-right-on-square-20-solid
 posts:
-  - title: Swift Jobs v1.0
-    description: Last year we released v1.0 of swift-jobs, the durable job execution queue. This week we released v1.0 of swift-jobs-valkey, the Valkey driver for swift-jobs. This is the final piece of the durable jobs puzzle.
-    to: /news/swift-jobs-1.0
-    date: 4 May 2026
-    authors:
-      - Adam
   - title: Our AI Policy
     description: As AI assisted coding becomes more prevalent in open source, we have established a policy for AI usage in contributions to Hummingbird.
     to: /news/ai-policy
