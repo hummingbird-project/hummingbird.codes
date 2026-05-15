@@ -94,10 +94,6 @@ const baseChartOptions = {
 
 const chartOptions = ref({
   ...baseChartOptions,
-  scales: {
-    ...baseChartOptions.scales,
-    y: { display: false, type: 'logarithmic' },
-  },
   plugins: {
     ...baseChartOptions.plugins,
     tooltip: { callbacks: { label: (ctx: any) => ` ${ctx.parsed.y.toLocaleString()} req/s` } }
@@ -106,6 +102,10 @@ const chartOptions = ref({
 
 const memoryChartOptions = ref({
   ...baseChartOptions,
+  scales: {
+    ...baseChartOptions.scales,
+    y: { display: false, type: 'logarithmic' }
+  },
   plugins: {
     ...baseChartOptions.plugins,
     tooltip: { callbacks: { label: (ctx: any) => ` ${ctx.parsed.y} MB` } }
