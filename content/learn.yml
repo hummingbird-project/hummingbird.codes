@@ -17,7 +17,7 @@ blogs:
     - title: kicsipixel
       description: Hands-on Hummingbird articles covering practical use cases and integrations, published on Medium.
       icon: i-simple-icons-medium
-      to: https://medium.com/@kicsipixel/
+      to: https://medium.com/@kicsipixel/hummingbird-tutorials-8d0d186e1036
     - title: WhyNoTestflight
       description: A 12-part series from static files to routes, Mustache templates, OpenAPI, middleware, and RequestContext patterns.
       icon: i-heroicons-document-text
