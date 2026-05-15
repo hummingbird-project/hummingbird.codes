@@ -15,8 +15,8 @@ useSeoMeta({
 
 const chartLabels = ['NodeJS', 'Spring Boot', 'Hummingbird']
 const chartColors = {
-  bg:     ['rgba(34,197,94,0.5)', 'rgba(59,130,246,0.5)', 'rgba(251,146,60,0.85)'],
-  border: ['rgba(34,197,94,0.8)', 'rgba(59,130,246,0.8)', 'rgba(251,146,60,1)'],
+  bg: ['rgba(34,197,94,0.5)', 'rgba(59,130,246,0.5)', 'rgba(251,146,60,0.85)'],
+  border: ['rgba(34,197,94,0.8)', 'rgba(59,130,246,0.8)', 'rgba(251,146,60,1)']
 }
 
 const performanceChartData = ref({
@@ -27,7 +27,7 @@ const performanceChartData = ref({
     backgroundColor: chartColors.bg,
     borderColor: chartColors.border,
     borderWidth: 1,
-    borderRadius: 6,
+    borderRadius: 6
   }]
 })
 
@@ -39,7 +39,7 @@ const memoryChartData = ref({
     backgroundColor: chartColors.bg,
     borderColor: chartColors.border,
     borderWidth: 1,
-    borderRadius: 6,
+    borderRadius: 6
   }]
 })
 
@@ -69,8 +69,8 @@ function makeLabelsPlugin(id: string, fmt: (v: number) => string) {
   }
 }
 
-const rpsLabelsPlugin  = makeLabelsPlugin('rpsLabels',  v => v >= 1000 ? `${Math.round(v / 1000)}k` : String(v))
-const memLabelsPlugin  = makeLabelsPlugin('memLabels',  v => `${v}MB`)
+const rpsLabelsPlugin = makeLabelsPlugin('rpsLabels', v => v >= 1000 ? `${Math.round(v / 1000)}k` : String(v))
+const memLabelsPlugin = makeLabelsPlugin('memLabels', v => `${v}MB`)
 
 const baseChartOptions = {
   responsive: true,
@@ -83,7 +83,7 @@ const baseChartOptions = {
     y: { display: false, beginAtZero: true },
     x: {
       grid: { display: false },
-      border: { display: false },
+      border: { display: true },
       ticks: {
         font: { size: 13, weight: 'bold' },
         color: 'rgba(255, 255, 255, 0.7)'
@@ -209,17 +209,20 @@ const memoryChartOptions = ref({
         :title="page.performance.title"
         :description="page.performance.description"
         :links="page.performance.links"
-        align="center"
       >
         <div class="charts-grid">
           <div>
-            <p class="chart-label">Requests / sec ↑</p>
+            <p class="chart-label">
+              Requests / sec ↑
+            </p>
             <div class="hero-chart">
               <Bar :data="performanceChartData" :options="chartOptions" :plugins="[rpsLabelsPlugin]" />
             </div>
           </div>
           <div>
-            <p class="chart-label">Memory usage ↓</p>
+            <p class="chart-label">
+              Memory usage ↓
+            </p>
             <div class="hero-chart">
               <Bar :data="memoryChartData" :options="memoryChartOptions" :plugins="[memLabelsPlugin]" />
             </div>
@@ -286,8 +289,9 @@ const memoryChartOptions = ref({
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
-  width: min(100%, 80vw);
+  width: min(75%, 80vw);
   overflow: hidden;
+  margin: auto;
 }
 
 @media (max-width: 640px) {
