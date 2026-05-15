@@ -12,6 +12,10 @@ concurrency:
   description: |
     Hummingbird embraces Swift's structured concurrency from the ground up — not retrofitted on top of callbacks or promises. Every request runs in a structured task tree, so cancellation and resource cleanup all happen correctly by design.
   items:
+    - title: Local Reasoning
+      description: |
+        Bring clarity to your concurrent programming by using the structure of your code to define the lifetimes of tasks and associated resources.
+      icon: i-heroicons-rectangle-group
     - title: Task Cancellation
       description: |
         If a client drops the connection (e.g. cancels a URLSession), Hummingbird detects it and cancels in-flight work automatically. No wasted CPU on abandoned Excel exports or slow database queries.
@@ -23,7 +27,7 @@ concurrency:
 
 performance:
   headline: Performance
-  title: Extremely low memory, lower running costs
+  title: Low memory, lower running costs
   description: |
     Hummingbird's tiny footprint means you run more on the same hardware, or spend less in the cloud. Backpressure and ARC keep memory stable and latency predictable.
   items:
