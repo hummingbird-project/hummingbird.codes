@@ -209,7 +209,7 @@ const memoryChartOptions = ref({
         :title="page.performance.title"
         :description="page.performance.description"
         :links="page.performance.links"
-        align="right"
+        align="center"
       >
         <div class="charts-grid">
           <div>
