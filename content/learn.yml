@@ -1,0 +1,47 @@
+title: Learn
+description: Tutorials, articles, and talks about Hummingbird from the Swift community.
+
+hero:
+  title: Learn
+  description: |
+    On top of the hummingbird documentation, there are many tutorials, articles, and talks from the Swift community. Whether you prefer reading or watching, there's something here to get you started or go deeper.
+
+blogs:
+  title: Articles & Blogs
+  description: Community-written articles and tutorials covering Hummingbird in depth.
+  items:
+    - title: Swift on Server
+      description: In-depth articles on Hummingbird — WebSockets, OpenAPI, Fluent, CORS, proxies, MongoDB ChangeStreams, and more.
+      icon: i-heroicons-document-text
+      to: https://swiftonserver.com/tags/hummingbird/
+    - title: kicsipixel
+      description: Hands-on Hummingbird articles covering practical use cases and integrations, published on Medium.
+      icon: i-simple-icons-medium
+      to: https://medium.com/@kicsipixel/hummingbird-tutorials-8d0d186e1036
+    - title: WhyNoTestflight
+      description: A 12-part series from static files to routes, Mustache templates, OpenAPI, middleware, and RequestContext patterns.
+      icon: i-heroicons-document-text
+      to: https://whynotestflight.com/excuses/how-can-i-have-hummingbird-serve-static-files/
+
+talks:
+  title: Talks & Videos
+  description: Conference talks and recorded sessions about Hummingbird.
+  items:
+    - title: Introduction to Hummingbird 2
+      description: by Joannis Orlandos — introducing Hummingbird 2's architecture and design philosophy.
+      to: https://www.youtube.com/watch?v=FHO_BfidQlQ
+      class: col-span-6
+      embedUrl: https://www.youtube.com/embed/FHO_BfidQlQ
+    - title: Build Your First Swift Server with Hummingbird
+      description: A beginner-friendly walkthrough of building your first Hummingbird server.
+      to: https://www.youtube.com/watch?v=t9MUj4LfsyU
+      class: col-span-6
+      embedUrl: https://www.youtube.com/embed/t9MUj4LfsyU
+    - title: Swift Community Meetups
+      description: Recordings from Swift community meetups, including Hummingbird talks and demos.
+      to: https://www.youtube.com/@SwiftCommunityMeetups
+      class: col-span-6
+    - title: SwiftServerConf
+      description: Conference talks from the Server-Side Swift conference.
+      to: https://www.youtube.com/@swiftserverconf
+      class: col-span-6

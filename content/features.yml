@@ -1,0 +1,64 @@
+title: Features - Hummingbird
+description: What makes Hummingbird the right choice for Swift at scale.
+
+hero:
+  title: Built for Swift at Scale
+  description: |
+    These aren't marketing checklist items. They're what makes Hummingbird correct under real production pressure - and invisible to your users, exactly as they should be.
+
+concurrency:
+  headline: Structured Concurrency
+  title: Your server behaves correctly, automatically
+  description: |
+    Hummingbird embraces Swift's structured concurrency from the ground up — not retrofitted on top of callbacks or promises. Every request runs in a structured task tree, so cancellation and resource cleanup all happen correctly by design.
+  items:
+    - title: Local Reasoning
+      description: |
+        Bring clarity to your concurrent programming by using the structure of your code to define the lifetimes of tasks and associated resources.
+      icon: i-heroicons-rectangle-group
+    - title: Task Cancellation
+      description: |
+        If a client drops the connection (e.g. cancels a URLSession), Hummingbird detects it and cancels in-flight work automatically. No wasted CPU on abandoned Excel exports or slow database queries.
+      icon: i-heroicons-x-circle
+    - title: Graceful Shutdown
+      description: |
+        On restart or maintenance, Hummingbird finishes all in-progress requests before going offline. No dropped connections, no API errors for your users.
+      icon: i-heroicons-arrow-path
+
+performance:
+  headline: Performance
+  title: Low memory, lower running costs
+  description: |
+    Hummingbird's tiny footprint means you run more on the same hardware, or spend less in the cloud. Backpressure and ARC keep memory stable and latency predictable.
+  items:
+    - title: Extremely Low Memory Usage
+      description: |
+        Hummingbird's memory footprint is tiny by design. More requests per dollar, fewer surprises under load.
+      icon: i-heroicons-server-stack
+    - title: Backpressure
+      description: |
+        If a client sends 2 GB of data faster than you can process it, Hummingbird throttles the socket automatically. Memory stays flat; your server stays stable.
+      icon: i-heroicons-shield-check
+    - title: Predictable Performance
+      description: |
+        No garbage collector pauses. Swift's ARC gives consistent, low-latency responses under load.
+      icon: i-heroicons-rocket-launch
+
+dx:
+  headline: Developer Experience
+  title: Type-safe, ergonomic, correct
+  description: |
+    Hummingbird replaces runtime guesswork with compile-time guarantees, and comes with a rich ecosystem of ready-to-run templates.
+  items:
+    - title: RequestContext
+      description: |
+        Replace untyped request storage (request["user"] as? User) with a struct you define. context.user is a User, non-optional, known at compile time. Unlocks powerful middleware design patterns.
+      icon: i-heroicons-light-bulb
+    - title: Rich Ecosystem
+      description: |
+        Templates and example projects for HTTP/2, WebSockets, authentication, and more - ready to clone and run.
+      icon: i-heroicons-rectangle-group
+    - title: Ergonomic Swift
+      description: |
+        Swift's expressive syntax makes route handlers, middleware, and response types clean and readable.
+      icon: i-heroicons-pencil-square
