@@ -24,7 +24,7 @@
     "@nuxtjs/robots": "^4.1.11",
     "@nuxtjs/sitemap": "^6.1.5",
     "chart.js": "^4.5.1",
-    "nuxt": "^3.21.5",
+    "nuxt": "^3.21.6",
     "vue-chartjs": "^5.3.2"
   },
   "devDependencies": {
