@@ -8,6 +8,12 @@ hero:
     to: /news/hummingbird-2
     icon: i-heroicons-arrow-top-right-on-square-20-solid
 posts:
+  - title: HB command line tool
+    description: We are really pleased to announce the release of `hb` our new command line tool for supporting Hummingbird application development.
+    to: /news/hb
+    date: 13 June 2026
+    authors:
+      - Adam
   - title: Swift Jobs v1.0
     description: Last year we released v1.0 of swift-jobs, the durable job execution queue. This week we released v1.0 of swift-jobs-valkey, the Valkey driver for swift-jobs. This is the final piece of the durable jobs puzzle.
     to: /news/swift-jobs-1-0
