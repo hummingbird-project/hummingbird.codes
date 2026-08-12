@@ -2,7 +2,10 @@
 title: GitHub Secure Open Source Fund
 description: Securing the future of Hummingbird with the GitHub Secure Open Source Fund.
 ---
-<h1 style='padding: 0.5em 0em 0em 0.5em;aspect-ratio:2.1;background:#00000000 url("/github-secure-open-source-fund.png") no-repeat;background-size:100%;'>GitHub Secure Open </br> Source Fund</h1>
+<div style='padding: 0.5em 0em 0em 0.5em;aspect-ratio:2.1;background:#00000000 url("/github-secure-open-source-fund.png") no-repeat;background-size:100%;'>
+<div style="width: 75%;">
+<h1>GitHub Secure Open Source Fund</h1>
+</div>
 </div>
 
 In March of this year we were very lucky to be invited to join the 4th round of the GitHub Secure Open Source Fund. The program is designed to help secure the future of open source projects by providing funding linked to the uptake of good security practices. At the same time projects become more financially secure they also become more secure to use. 
