@@ -2,13 +2,12 @@
 title: GitHub Secure Open Source Fund
 description: Securing the future of Hummingbird with the GitHub Secure Open Source Fund.
 ---
-<h1 style="position:fixed;top:108px;padding-left:20px;">GitHub Secure Open </br> Source Fund</h1>
-
-![](github-secure-open-source-fund.png)
+<h1 style='padding: 0.5em 0em 0em 0.5em;aspect-ratio:2.1;background:#00000000 url("/github-secure-open-source-fund.png") no-repeat;background-size:100%;'>GitHub Secure Open </br> Source Fund</h1>
+</div>
 
 In March of this year we were very lucky to be invited to join the 4th round of the GitHub Secure Open Source Fund. The program is designed to help secure the future of open source projects by providing funding linked to the uptake of good security practices. At the same time projects become more financially secure they also become more secure to use. 
 
-Previous projects that have been through the program include projects like curl, Node.js, Python, LLVM and our fellow Swift server framework Vapor. Projects that joined us in the 4th round include 
+Previous projects that have been through the program include projects like curl, Node.js, Python, LLVM and our fellow Swift server framework Vapor. Projects that joined us in the 4th round included OpenClaw, HTMX, LadybugDB and many more.
 
 Initially the program consisted of three weeks of sessions presented by experts related to a wide range of security subjects including general security practices when running project, threat modelling, incident response, GitHub action hardening, CodeQL, fuzz testing and AI security. Once completed we received a lump sum from the fund and if we can prove we are acting on what we learnt over those three weeks a further two smaller sums will also come our way at 6 months and 12 months.
 
@@ -26,4 +25,4 @@ Practical changes you can see in Hummingbird today include
 
 On top of everything we are now part of a community of projects who have been through the program. Thanks to technical backing of GitHub that community hasn't disbanded after the end of the three weeks. It still continues. We have access to a group of people who understand the complex world of building secure open source projects. We get insight into how to deal with issues and can collaborate on solutions.
 
-We’d like to thank the GitHub Security Lab for including us in the program. We learnt so much and it has changed the way we look at security. If anyone has the chance to join this program. You can find out more about the GitHub Secure Open Source Funds [here](https://github.com/open-source/github-secure-open-source-fund). 
+We’d like to thank the GitHub Security Lab for including us in the program. We learnt so much and it has changed the way we look at security. If anyone has the chance to join this program they should go for it. You can find out more about the GitHub Secure Open Source Fund [here](https://github.com/open-source/github-secure-open-source-fund). 
