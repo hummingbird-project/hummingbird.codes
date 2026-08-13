@@ -11,7 +11,7 @@ posts:
   - title: Hummingbird at GitHub Secure Open Source Fund
     description: In March of this year we were very lucky to be invited to join the 4th round of the GitHub Secure Open Source Fund. The program is designed to help secure the future of open source projects by providing funding linked to the uptake of good security practices.
     to: /news/github-secure-open-source-fund
-    date: 11 August 2026
+    date: 13 August 2026
     authors:
       - Adam
   - title: HB command line tool
