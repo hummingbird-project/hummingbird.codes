@@ -4,7 +4,7 @@ description: Securing the future of Hummingbird with the GitHub Secure Open Sour
 ---
 <div style='padding: 0.5em 0em 0em 0.5em;aspect-ratio:2.1;background:#00000000 url("/github-secure-open-source-fund.png") no-repeat;background-size:100%;'>
 <div style="width: 75%;">
-<h1>Hummingbird at GitHub Secure Open Source Fund</h1>
+<h1 style="color: #111;">Hummingbird at GitHub Secure Open Source Fund</h1>
 </div>
 </div>
 
