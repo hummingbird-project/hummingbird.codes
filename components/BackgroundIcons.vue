@@ -1,7 +1,7 @@
 <template>
   <div class="icon-container">
     <Icon
-      v-for="({icon, style, classes }, index) in icons"
+      v-for="({ icon, style, classes }, index) in icons"
       :key="index"
       :name="icon"
       :class="classes"
@@ -46,8 +46,7 @@ export default {
         { icon: 'i-simple-icons-swagger', style: randomPositionStyle(), classes: classes() },
         { icon: 'i-simple-icons-jsonwebtokens', style: randomPositionStyle(), classes: classes() },
         { icon: 'i-simple-icons-webauthn', style: randomPositionStyle(), classes: classes() },
-        { icon: 'i-simple-icons-aws', style: randomPositionStyle(), classes: classes() },
-        { icon: 'i-simple-icons-mqtt', style: randomPositionStyle(), classes: classes() },
+        { icon: 'i-simple-icons-mqtt', style: randomPositionStyle(), classes: classes() }
       ]
     }
   }
