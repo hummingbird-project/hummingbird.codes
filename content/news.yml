@@ -8,6 +8,12 @@ hero:
     to: /news/hummingbird-2
     icon: i-heroicons-arrow-top-right-on-square-20-solid
 posts:
+  - title: Hummingbird at GitHub Secure Open Source Fund
+    description: In March of this year we were very lucky to be invited to join the 4th round of the GitHub Secure Open Source Fund. The program is designed to help secure the future of open source projects by providing funding linked to the uptake of good security practices.
+    to: /news/github-secure-open-source-fund
+    date: 13 August 2026
+    authors:
+      - Adam
   - title: HB command line tool
     description: We are really pleased to announce the release of `hb` our new command line tool for supporting Hummingbird application development.
     to: /news/hb
