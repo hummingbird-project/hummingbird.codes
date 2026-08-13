@@ -35,7 +35,7 @@ export default defineNuxtConfig({
 
   icon: {
     serverBundle: {
-      collections: ['heroicons', 'simple-icons', 'mdi', 'fluent']
+      collections: ['heroicons', 'simple-icons', 'mdi']
     }
   },
 
