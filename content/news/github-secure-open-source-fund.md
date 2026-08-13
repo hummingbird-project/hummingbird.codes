@@ -20,7 +20,7 @@ Practical changes you can see in Hummingbird today include
 
 -   We tidied up our reporting of security issues and wrote an [incident response plan](https://github.com/hummingbird-project/hummingbird/blob/main/docs/incident_response.md).
 -   We started writing a [threat model](https://github.com/hummingbird-project/hummingbird/blob/main/docs/threat_model.md).
--   We added [documentation]((https://docs.hummingbird.codes/2.0/documentation/hummingbird/securingyourapplication)) for end users on how to secure their application.
+-   We added [documentation](https://docs.hummingbird.codes/2.0/documentation/hummingbird/securingyourapplication) for end users on how to secure their application.
 -   We hardened our Github Actions by setting minimum permissions on every action and using commit hashes to avoid supply chain attacks.
 -   We enabled immutable releases so releases cannot be edited by a bad actor.
 -   We require MFA for all members of the Hummingbird organisation.
