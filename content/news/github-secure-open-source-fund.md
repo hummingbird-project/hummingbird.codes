@@ -10,7 +10,7 @@ description: Securing the future of Hummingbird with the GitHub Secure Open Sour
 
 In March of this year we were very lucky to be invited to join the 4th round of the GitHub Secure Open Source Fund. The program is designed to help secure the future of open source projects by providing funding linked to the uptake of good security practices. At the same time projects become more financially secure they also become more secure to use. 
 
-Previous projects that have been through the program include projects like curl, Node.js, Python, LLVM and our fellow Swift server framework Vapor. 49 other projects joined us in the 4th round. These included OpenClaw, HTMX, FastAPI and many more.
+Previous projects that have been through the program include curl, Node.js, Python, LLVM and our fellow Swift server framework Vapor. 49 other projects joined us in the 4th round. These included OpenClaw, HTMX, FastAPI and many more.
 
 Initially the program consisted of three weeks of sessions presented by experts related to a wide range of security subjects including general security practices when running project, threat modelling, incident response, GitHub action hardening, CodeQL, fuzz testing and AI security. Once completed we received a lump sum from the fund and if we can prove we are acting on what we learnt over those three weeks a further two smaller sums will also come our way at 6 months and 12 months.
 

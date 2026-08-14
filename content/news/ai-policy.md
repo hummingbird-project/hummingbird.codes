@@ -10,7 +10,7 @@ We are happy to accept contributions that have been generated using some form of
 
 Most importantly: We expect contributors to have fully reviewed their generated code, and are able to answer any questions related to the PR and decisions made. If you don't understand the generated code, please do not submit it - file an issue instead. This ensures your PR is not a proxy for us interfacing with an LLM.
 
-Hummingbird sets a high quality bar, which is essential to the project's goals and succeess. The introduction of AI does not lower this bar - we still expect the same code standards and requirements to apply. All supported platforms remain supported, and tests are added where applicable.
+Hummingbird sets a high quality bar, which is essential to the project's goals and success. The introduction of AI does not lower this bar - we still expect the same code standards and requirements to apply. All supported platforms remain supported, and tests are added where applicable.
 
 Tests in particular should be much easier to write with AI. However, as AI has the tendency to force things green, please don't introduce redundant of "fake" tests that are effectively equivalent to `XCTAssert(true)`. It's wise to spend the time discussing with your LLM what the goal of the feature is, and find out in ways it can break. Breaking can be a mistake in your current PR, but could also arise when someone modifies your code.
 
